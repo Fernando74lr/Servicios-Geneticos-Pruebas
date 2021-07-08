@@ -1,298 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
+let i = 2;
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./logo.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="prueba.css">
-    <!-- Bootstrap CSS v4.3.1 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Bootstrap JS v4.3.1 -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- FontAwesome v5.13 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Circle -->
-    <script src="circle.js"></script>
-    <link rel="stylesheet" href="circle.css">
-    <link rel="stylesheet" href="./extra_small_devices.css">
-    <title>Servicios genéticos</title>
-</head>
+$(document).ready(function() {
+    $('#width-screen').html(`${window.outerWidth}`);
+    $('#height-screen').html(`${window.outerHeight}`);
 
-<body>
+    var radius = 0;
+    if (window.innerWidth < 450) {
+        console.log('xd');
+        radius = 410;
+    } else {
+        radius = 750;
+    }
+    var fields = $('.itemDot');
+    var container = $('.dotCircle');
+    var width = container.width();
+    radius = width / 2.5;
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid sans-font">
-            <div class="d-flex flex-grow-1">
-                <img id="logo-navbar" src="./img/logo-navbar.png" alt="logo-navbar">
-            </div>
-            <button id="button-menu" class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i id="icon-menu" class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar-list">
-                <ul id="ul-items" class="navbar-nav ms-auto flex-nowrap">
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Pruebas</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">FAQ</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <button id="btn-labopat" class="navbar-text">LABOPAT</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    var height = container.height();
+    var angle = 0,
+        step = (2 * Math.PI) / fields.length;
+    fields.each(function() {
+        var x = Math.round(width / 2 + radius * Math.cos(angle) - $(this).width() / 2);
+        var y = Math.round(height / 2 + radius * Math.sin(angle) - $(this).height() / 2);
+        if (window.console) {
+            // console.log($(this).text(), x, y);
+        }
 
-    <!-- Carousel -->
-    <div id="carousel-img" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol id="indicators" class="carousel-indicators">
-            <li data-target="#carousel-img" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-img" data-slide-to="1"></li>
-            <li data-target="#carousel-img" data-slide-to="2"></li>
-        </ol>
+        $(this).css({
+            left: x + 'px',
+            top: y + 'px'
+        });
+        
+        angle += step;
+    });
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- Img 1 -->
-                <img class="d-block w-100" src="./img/carousel-1.png" alt="First slide">
-                <!-- Caption 1 -->
-                <div id="carousel-captions" class="carousel-caption d-md-block">
-                    <h1 id="h1-no-bg" class="bernina-sans-extrabold">PRUEBA EN SALIVA</h1>
-                    <div id="div-bg">
-                        <h1 id="h1-bg" class="bernina-sans-regular">¡FÁCIL Y SIN AGUJAS!</h1>
-                    </div>
-                    <p class="bernina-sans-regular">*Contamos con kits pediátricos</p>
-                    <button class="bernina-narrow-extrabold">Más información</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <!-- Img 2 -->
-                <img class="d-block w-100" src="./img/carousel-1.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <!-- Img 3 -->
-                <img class="d-block w-100" src="./img/carousel-1.png" alt="Third slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carousel-img" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-img" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
-    </div>
+    $('.itemDot').click(function() {
+        var dataTab = $(this).data('tab');
+        $('.itemDot').removeClass('active');
+        $(this).addClass('active');
+        $('.CirItem').removeClass('active');
+        $('.CirItem' + dataTab).addClass('active');
+        i = dataTab;
 
-    <!-- Section description -->
-    <section>
-        <div class="container">
-            <div class="section"></div>
-            <div class="header">
-                <h1 class="sans-font-bold">Conoce</h1>
-                <p class="sans-font-light">nuestros</p>
-                <h1 class="sans-font-bold">servicios.</h1>
-            </div>
-            <div class="title">
-                <h4 class="sans-font-bold">Somos un laboratorio con más de 30 años de experiencia.</h4>
-            </div>
-            <div class="description">
-                <p>
-                    Labopat a través de su área de <span class="sans-font-bold">Servicios Genéticos</span> ofrece
-                    diferentes
-                    pruebas genéticas con la mejor y más avanzada tecnología, así como
-                    el mejor equipo de especialistas y profesionales de la salud.
-                </p>
-            </div>
-            <div class="btn-section">
-                <button class="sans-font-light">CONOCE CÓMO ES LA TOMA DE MUESTRA</button>
-            </div>
-        </div>
-    </section>
+        $('.dotCircle').css({
+            'transform': 'rotate(' + (360 - (i - 1) * 36) + 'deg)',
+            'transition': '3s'
+        });
 
-    <!-- Section buttons -->
-    <section id="btns-baby">
-        <div id="buttons-container">
-            <div class="holderCircle">
-                <div class="dotCircle">
-                    <span class="itemDot active itemDot1" data-tab="1">
-                        <img src="./img/cancer.png" alt="cancer">
-                    </span>
-                    <span class="itemDot itemDot2" data-tab="2">
-                        <img id="cardiologia" src="./img/cardiologia.png" alt="cardiologia">
-                    </span>
-                    <span class="itemDot itemDot3" data-tab="3">
-                        <img src="./img/dermatologia.png" alt="dermatologia">
-                    </span>
-                    <span class="itemDot itemDot4" data-tab="4">
-                        <img id="endocrinologia" src="./img/endocrinologia.png" alt="endocrinologia">
-                    </span>
-                    <span class="itemDot itemDot5" data-tab="5">
-                        <img src="./img/exoma.png" alt="exoma">
-                    </span>
-                    <span class="itemDot itemDot6" data-tab="6">
-                        <img src="./img/hematologia.png" alt="hematologia">
-                    </span>
-                    <span class="itemDot itemDot7" data-tab="7">
-                        <img src="./img/inmunologia.png" alt="inmunologia">
-                    </span>
-                    <span class="itemDot itemDot8" data-tab="8">
-                        <img src="./img/nefrologia.png" alt="nefrologia">
-                    </span>
-                    <span class="itemDot itemDot9" data-tab="9">
-                        <img src="./img/neurologia.png" alt="neurologia">
-                    </span>
-                    <span class="itemDot itemDot10" data-tab="10">
-                        <img id="oftalmologia" src="./img/oftalmologia.png" alt="oftalmologia">
-                    </span>
-                    <span class="itemDot itemDot11" data-tab="11">
-                        <img id="pediatria" src="./img/pediatria.png" alt="pediatria">
-                    </span>
-                    <span class="itemDot itemDot12" data-tab="12">
-                        <img id="tamiz" src="./img/tamiz-recien-nacido.png" alt="tamiz-recien-nacido">
-                    </span>
-                    <span class="itemDot itemDot13" data-tab="13">
-                        <img src="./img/trastornos-metabolicos.png" alt="trastornos-metabolicos">
-                    </span>
-                </div>
+        $('.itemDot').css({
+            'transform': 'rotate(' + ((i - 1) * 36) + 'deg)',
+            'transition': '4s'
+        });
+    });
 
-                <div class="contentCircle">
-                    <div class="CirItem active CirItem1">
-                        <h1>CÁNCER</h1>
-                    </div>
-                    <div class="CirItem CirItem2">
-                        <h1>CARDIOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem3">
-                        <h1>DERMATOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem4">
-                        <h1 id="endocrino-text">ENDOCRINOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem5">
-                        <h1>EXOMA</h1>
-                    </div>
-                    <div class="CirItem CirItem6">
-                        <h1>HEMATOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem7">
-                        <h1>INMUNOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem8">
-                        <h1>NEFROLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem9">
-                        <h1>NEUROLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem10">
-                        <h1>OFTALMOLOGÍA</h1>
-                    </div>
-                    <div class="CirItem CirItem11">
-                        <h1>PEDIATRÍA</h1>
-                    </div>
-                    <div id="tamiz-text" class="CirItem CirItem12">
-                        <h1>TAMIZ RECIÉN NACIDO</h1>
-                    </div>
-                    <div class="CirItem CirItem13">
-                        <h1>TRASTORNOS METABÓLICOS</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="baby-bg"><img src="./img/baby-section.jpg" alt="baby-section"></div>
-    </section>
+    setInterval(function() {
+        var dataTab = $('.itemDot.active').data("tab");
 
-    <!-- Section form -->
-    <section>
-        <div class="container2">
-            <div class="header-contact">
-                <h1 class="sans-font-light">Contáctanos</h1>
-            </div>
-            <div class="description-contact">
-                <div>
-                    <span class="sans-font-bold">Horario de Atención a clientes.</span><br><br>
-                    <p>
-                        Lunes a Viernes: 9:00 am - 5:00 pm <br>
-                        Sábado 9:00 am - 12:00 pm <br>
-                        222 375 4152 ext. 105 <br>
-                        55 6917 6455 <br>
-                    </p>
-                    <span class="sans-font-bold">*Los domingos no tenemos servicio.</span><br><br>
-                    <span class="sans-font-bold">Atención a clientes</span><br>
-                    servicios_genéticos@labopat.mx
-                </div>
-            </div>
-            <div class="form-contact"></div>
-            <div class="name">
-                <input type="text" id="name" placeholder="Nombre">
-            </div>
-            <div class="lastname">
-                <input type="text" id="lastname" placeholder="Apellido">
-            </div>
-            <div class="email">
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div class="cellphone">
-                <input type="number" id="cellphone" placeholder="Teléfono">
-            </div>
-            <div class="message-form">
-                <textarea id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..."></textarea>
-            </div>
-            <div class="button-form">
-                <button class="sans-font-light">Enviar</button>
-            </div>
-        </div>
-    </section>
-    
-    <!-- AQUÍ ME QUEDÉ AAAAAAAAAAAAAAAAAAAAAAAAAA -->
-    
-    <!-- Footer -->
-    <footer>
-        <div>
-            <p class="sans-font">
-                Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
-                Andrés Cholula, Puebla. <br>
-                Tel: 222 375 4152 / 55 6917 6455
-            </p>
-            <h5 class="sans-font-bold">
-                © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
-            </h5>
-        </div>
-    </footer>
-    <div id="oops"></div>
+        if (dataTab > 13 || i > 13) {
+            dataTab = 1;
+            i = 1;
+        }
 
-</body>
+        $('.itemDot').removeClass('active');
+        $('[data-tab="' + i + '"]').addClass('active');
+        $('.CirItem').removeClass('active');
+        $('.CirItem' + i).addClass('active');
+        i++;
 
-</html>
+        $('.dotCircle').css({
+            "transform": "rotate(" + (360 - (i - 2) * 36) + "deg)",
+            "transition": "3s"
+        });
+        $('.itemDot').css({
+            "transform": "rotate(" + ((i - 2) * 36) + "deg)",
+            "transition": "1s"
+        });
+    }, 3000);
+
+});
