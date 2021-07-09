@@ -2,68 +2,173 @@
 /* @media only screen and (max-width: 600px) {...} */
 /* @media only screen and (max-width: 375px) {...}*/
 
-@media only screen and (min-width: 360px) and (max-width: 396px){
-    /* Section baby */
-    #btns-baby {
-        position: absolute;
-        left: -8.5px;
-    }
+@media only screen and (min-width: 360px) and (max-width: 396px) {
     
-    /* Navbar */
-    #ul-items li a {
-        margin-left: 7px!important;
+    body {
+        /* WTF!? */
+        margin-right: -58px;
+        border: 1px solid red;
     }
 
+    #carousel-captions {
+        padding-left: 34px!important;
+        margin-bottom: 0em!important;
+    }
+
+    #h1-no-bg {
+        font-size: 19.5pt!important;
+    }
+
+    #logo-navbar {
+        /* 165 x 45 */
+        height: 43px;
+        width: 157px;
+        margin-left: 0px;
+    }
+
+    #contact-form {
+        /* padding-left: 20px; */
+        width: 393px;
+        /* border: 1px solid blue; */
+    }
+
+    /* Section baby */
+    #btns-baby {
+        display: none;
+        position: absolute!important;
+        left: -20px!important;
+        top: 1030px!important;
+    }
+
+    .w-100 {
+        width: 230%!important;
+    }
+
+    /* Navbar */
+    #ul-items li a {
+        margin-left: 35px!important;
+    }
+    
+    .nav-item {
+        margin-left: 30px;
+        width: 300px;
+        /* border: 1px solid green; */
+    }
+
+    #ul-items {
+        margin-right: -13px!important;
+    }
+    
     #btn-labopat {
-        margin-right: 322px!important;
+        margin-right: 55px!important;
     }
     
     /* Section */
     .header {
         position: absolute;
-        margin: 2.5em 2em 0 0!important;
+        margin: 2.5em 2em 0 28px!important;
+    }
+
+    .title h4 {
+        color: var(--black);
+        font-size: 35px;
+        /* border: 1px solid red; */
+        margin-left: -59px;
+        padding-right: 0px;
+        width: 320px;
     }
 
     /* Carousel captions */
     #h1-bg {
-        font-size: 29pt!important;
+        font-size: 30pt!important;
     }
 
     #div-bg {
         margin-left: -35px!important;
-        width: 375px!important;
+        width: 390px!important;
     }
 
     #carousel-captions p {
         margin-top: 3px!important;
-        margin-left: -290px!important;
+        margin-left: -286px!important;
+        font-size: 19px!important;
     }
 
     #carousel-captions button {
-        margin-right: -8em!important;
+        margin-right: -11em!important;
     }
 
     /* Carousel */
     .carousel-indicators {
-        top: 12.2em!important;
+        top: 13.7em!important;
     }
 
     /* Section */
     .title {
-        padding: 0 0 0 6em!important;
+        padding: 0 0 0 6.5em!important;
         margin-bottom: 0px!important;
     }
 
     .description {
-        padding: 0 0 0 5.5em!important;
+        padding: 0 0 5px 120px!important;
+        width: 299px!important;
+    }
+
+    .description p {
+        margin-top: -15px;
+        margin-left: -58px;
+        padding-right: 10px;
+        font-size: 15pt;
+        margin-bottom: 0;
+        width: 347px;
     }
 
     .btn-section button {
-        margin-left: 0px!important;
+        margin-left: 30px!important;
     }
 
-    #contact-form {
-        margin-left: -4px;
+    .button-form {
+        width: 390px!important;
+    }
+
+    .button-form button {
+        margin-left: 175px!important;
+    }
+
+    .name,
+    .lastname,
+    .email,
+    .cellphone,
+    .message-form {
+        width: 393px!important;
+        padding-left: 20px;
+    }
+
+    /* .name input,
+    .lastname input,
+    .email input,
+    .cellphone input,
+    .message-form textarea {
+        width: 393px!important;
+        padding-left: 20px;
+    } */
+
+    .container2 {
+        width: 393px!important;
+    }
+
+    .holderCircle {
+        width: 393px!important;
+        /* border: 1px solid blue; */
+        margin-left: 35px;        
+    }
+
+    .header-contact h1 {
+        margin-left: 25px;
+    }
+
+    .description-contact div {
+        margin-left: 47px!important;
     }
 
 }
@@ -235,6 +340,7 @@
 
     .header h1 {
         text-align: center;
+        padding-left: 10pxfd;
     }
     
     .header h1:nth-child(3) {
@@ -347,32 +453,32 @@
     .name input {
         margin: 20px 0 20px 80px;
         height: 40px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .lastname input {
         margin: 0 0 35px 180px;
         height: 40px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .email input {
         margin: 0 0 20px 80px;
         height: 40px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .cellphone input {
         margin: 0 0 35px 180px;
         height: 40px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .message-form textarea {
         margin: 0 0 0 80px;
         /* height: 40px; */
         width: 250px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .name input::placeholder,
@@ -380,7 +486,7 @@
     .email input::placeholder,
     .cellphone input::placeholder,
     .message-form textarea::placeholder {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .button-form button {
