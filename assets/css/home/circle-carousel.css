@@ -1,0 +1,42 @@
+
+/* Section baby */
+#btns-baby {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    padding-right: 20px;
+}
+
+#buttons-container {
+    width: 900px;
+    /* border: 1px solid green; */
+    position: relative;
+    /* margin-right: 100px; */
+    left: 100px;
+}
+
+/* .container * {
+    position: relative;
+} */
+
+#woman-tube {
+    /* 720x603 */
+    /* margin-right: 100px; */
+    position: relative;
+    left: -141px;
+    width: 820px;
+    height: 703px;
+}
+
+#carousel-title {
+    /* color: var(--gray);
+    font-size: 40px; */
+    width: 354px;
+    height: 346px;
+    font-size: 40px;
+    line-height: 43px;
+    color: #3e4040;
+    /* color: var(--gray); */
+    font-weight: 700;
+    text-align: center;
+}

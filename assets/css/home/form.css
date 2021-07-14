@@ -1,0 +1,128 @@
+
+/* Form section */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 550px;
+    margin-top: 45px;
+}
+
+.header-contact {
+    grid-area: 2 / 1 / 4 / 8;
+    padding-left: 190px;
+}
+
+.header-contact h1 {
+    color: var(--bluegreen);
+    font-size: 70px;
+}
+
+.description-contact {
+    grid-area: 4 / 1 / 7 / 4;
+}
+
+.description-contact div {
+    color: var(--black);
+    margin-left: 200px;
+    font-size: 17px;
+}
+
+.form-contact {
+    grid-area: 4 / 4 / 7 / 8;
+}
+
+.name {
+    grid-area: 4 / 4 / 5 / 6;
+}
+
+.lastname {
+    grid-area: 4 / 6 / 5 / 8;
+}
+
+.email {
+    grid-area: 5 / 4 / 6 / 6;
+}
+
+.cellphone {
+    grid-area: 5 / 6 / 6 / 8;
+}
+
+.cellphone input::-webkit-outer-spin-button,
+.cellphone input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-form {
+    grid-area: 7 / 4 / 8 / 8;
+}
+
+.message-form {
+    grid-area: 6 / 4 / 7 / 8;
+}
+
+.message-form textarea {
+    height: 100px;
+    width: 536px;
+    top: -15px;
+}
+
+.lastname input,
+.cellphone input {
+    left: -100px;
+}
+
+.name input,
+.lastname input {
+    top: 15px;
+}
+
+.name input,
+.lastname input,
+.email input,
+.cellphone input {
+    width: 250px;
+}
+
+.name input,
+.lastname input,
+.email input,
+.cellphone input,
+.message-form textarea {
+    border: 1px solid var(--bluegreen);
+    color: var(--bluegreen);
+    font-size: 15px;
+    resize: none;
+    text-align: justify;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 3px;
+}
+
+.name input:focus,
+.lastname input:focus,
+.email input:focus,
+.cellphone input:focus,
+.message-form textarea:focus {
+    outline: none;
+}
+
+.name input::placeholder,
+.lastname input::placeholder,
+.email input::placeholder,
+.cellphone input::placeholder,
+.message-form textarea::placeholder {
+    font-size: 17px;
+    color: var(--bluegreen);
+}
+
+.container2 * {
+    position: relative;
+}
+
+.button-form button {
+    width: 100px;
+}

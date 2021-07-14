@@ -1,0 +1,53 @@
+
+/* Navbar */
+#logo-navbar {
+    /* 165 x 45 */
+    height: 43px;
+    width: 163px;
+    margin: 0 0 5px 150px;
+}
+
+.navbar-text {
+    color: var(--bluegreen);
+    font-size: 15pt;
+}
+
+#ul-items li a {
+    color: var(--bluegreen);
+}
+
+#ul-items li:last-child {
+    margin-right: 80px;
+}
+
+#btn-labopat {
+    border: none;
+    border: 1px solid var(--bluegreen);
+    background-color: transparent;
+    border-radius: 30px;
+    width: 80pt;
+    height: 25pt;
+    margin-top: 6px;
+    padding-top: 2px;
+}
+
+#btn-labopat:active {
+    transform: translateY(2px);
+}
+.nav-item {
+    margin-left: 30px;
+}
+
+#ul-items {
+    margin-right: -225px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}

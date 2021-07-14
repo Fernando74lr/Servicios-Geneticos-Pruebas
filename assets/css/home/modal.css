@@ -1,0 +1,191 @@
+
+/* Modal */
+#modal-1 {
+    width: 1368px;
+    margin-left: -107px;
+    height: 527px;
+    border-radius: 0%;
+    border: none;
+    /* border: 1px solid green; */
+}
+
+.banner-prop {
+    padding-top: 150px;
+}
+
+/* Close button */
+#btn-close-modal {
+    /* border: 1px solid black; */
+    width: 50px;
+    margin: 5px 0 0 55em;
+}
+
+#btn-close-modal:focus {
+    outline: none;
+}
+
+/* Banners */
+#caption-modal-1,
+#caption-modal-2,
+#caption-modal-3,
+#caption-modal-4 {
+    margin-bottom: 50px;
+    display: flex;
+    /* margin-right: 10%; */
+}
+
+#caption-modal-1 h4,
+#caption-modal-2 h4,
+#caption-modal-3 h4,
+#caption-modal-4 h4 {
+    width: 289px;
+    height: 19px;
+    font-size: 24px;
+    line-height: 25px;
+    color: var(--bluegreen);
+    font-weight: 300;
+    font-family: "Source Sans Pro";
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    /* margin-right: 10%; */
+}
+
+#caption-modal-1 span,
+#caption-modal-2 span,
+#caption-modal-3 span,
+#caption-modal-4 span {
+    margin-right: 40px;
+    /* margin-right: 10%; */
+}
+
+#caption-modal-1 p,
+#caption-modal-2 p,
+#caption-modal-3 p,
+#caption-modal-4 p {
+    color: var(--black);
+    text-align: left;
+    position: absolute;
+    top: 140px;
+    left: 513px;
+    font-size: 21px;
+    width: 370px;
+    /* margin-right: 10%; */
+}
+
+.line {
+    width: 227px;
+    height: 1px;
+    background-color: #00827f;
+    border: 0px solid #2b6464;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    /* margin-right: 10%; */
+}
+
+.elipse {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url('../../img/modal/elipse-bg.png');
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    /* margin-right: 10%; */
+}
+
+#img-modal-1,
+#img-modal-2,
+#img-modal-3,
+#img-modal-4 {
+    /* 717x557 */
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    /* margin-right: 10%; */
+}
+
+#img-modal-1 {
+    background-image: url('../../img/modal/steps/step-1.png');
+    background-position-x: -140px;
+    background-position-y: -25px;
+}
+
+#img-modal-2 {
+    background-image: url('../../img/modal/steps/step-2.png');
+    background-size: 100%;
+    background-position-y: -120px;
+}
+
+#img-modal-3 {
+    background-image: url('../../img/modal/steps/step-3.png');
+    background-size: 100%;
+    background-position-y: -25px;
+}
+
+#img-modal-4 {
+    background-image: url('../../img/modal/steps/step-4.png');
+    background-size: 100%;
+}
+
+/* Static title */
+#static-modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    margin-left: 425px;
+    /* margin-right: 10%; */
+}
+
+#static-modal-title h1 {
+    color: var(--orange);
+    font-size: 55px;
+}
+
+#static-modal-title p {
+    font-size: 19px;
+}
+
+/* Arreglos */
+#caption-modal-3 h4 {
+    top: 50px;
+    width: 380px;
+}
+
+#caption-modal-2 p {
+    left: 503px;
+}
+
+#caption-modal-3 p {
+    top: 90px;
+    left: 503px;
+}
+
+#caption-modal-2 .line {
+    width: 252px;
+    left: 418px;
+}
+
+#caption-modal-3 .line {
+    top: 80px;
+    width: 336px;
+    left: 422px;
+}
+
+#caption-modal-4 .line {
+    top: 130px;
+    width: 287px;
+    left: 402px;
+}
+
+#caption-modal-4 p {
+    /* top: 90px; */
+    left: 483px;
+}
