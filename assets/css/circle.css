@@ -9,7 +9,6 @@
 
 .holderCircle {
 	width: 670px;
-	/* border: 1px solid red; */
 	height: 670px;
 	border-radius: 100%;
 	margin: 30px auto;
@@ -113,7 +112,7 @@
 	border-radius: 100%;
 	color: transparent;
 	position: relative;
-	top: 100px;
+	top: 105px;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -156,8 +155,6 @@
 	padding-top: 5px;
 	width: 100px;
 	height: 100px;
-	/* border: 1px solid var(--bluegreen); */
-	/* background-color: #00827e1c; */
 	color:#fff;
 	transition:0.5s;
 }
@@ -228,7 +225,6 @@
 		bottom: 0;
 		border-radius: 100%;
 		z-index: 20;
-		/* border: 1px solid red; */
 	}
 	
 	.dotCircle .itemDot.active {
@@ -251,14 +247,12 @@
 		bottom: 0;
 		left: 0;
 		margin: auto;
-		/* border: 1px solid green; */
 	}
 
 	.contentCircle h1 {
 		margin-top: 100px;
 		font-size: 30px;
 		margin-left: 3px;
-		/* border: 1px solid red; */
 	}
 
 	#endocrino-text {
@@ -267,7 +261,6 @@
 
 	.holderCircle {
 		width: 410px;
-		/* border: 1px solid red; */
 		height: 410px;
 		margin-top: 50px;
 		margin-bottom: 0%;

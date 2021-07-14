@@ -5,7 +5,6 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    /* border: 1px solid red; */
 }
 
 .section {
@@ -17,7 +16,6 @@
 .header {
     grid-area: 2 / 1 / 5 / 4;
     position: absolute;
-    /* border: 1px solid green; */
 }
 
 .header h1 {
@@ -25,12 +23,12 @@
     font-weight: bolder;
     font-size: 35pt;
     margin-top: 80px;
-    margin-bottom: -40px;
+    margin-bottom: -46px;
 }
 
 .header h1:nth-child(3) {
-    padding-left: 3.1em;
-    margin-top: -17px;
+    padding-left: 3.5em;
+    margin-top: -16px;
 }
 
 .header p {
@@ -46,7 +44,6 @@
 
 .title {
     grid-area: 2 / 4 / 3 / 8;
-    /* border: 1px solid blue; */
 }
 
 .title h4 {
@@ -58,7 +55,6 @@
 
 .description {
     grid-area: 3 / 4 / 4 / 8;
-    /* border: 1px solid red; */
 }
 
 .description p {
