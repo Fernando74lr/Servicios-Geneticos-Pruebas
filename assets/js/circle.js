@@ -1,12 +1,16 @@
 let i = 2;
 
 $(document).ready(function() {
+
+    $('.modal-carousel').carousel({
+        interval: false
+    })
+
     // $('#width-screen').html(`${window.outerWidth}`);
     // $('#height-screen').html(`${window.outerHeight}`);
     
     var radius = 0;
     if (window.innerWidth < 450) {
-        console.log('xd');
         radius = 410;
     } else {
         radius = 750;
