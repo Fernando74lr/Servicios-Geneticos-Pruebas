@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Circle -->
     <script src="./assets/js/circle.js"></script>
     <link rel="stylesheet" href="./assets/css/circle.css">
@@ -82,7 +84,7 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carousel-img" class="carousel slide" data-ride="carousel">
+    <div id="carousel-img" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel" style="--animate-duration: 1.5s;">
         <!-- Indicators -->
         <ol id="indicators" class="carousel-indicators">
             <li data-target="#carousel-img" data-slide-to="0" class="active"></li>
@@ -95,19 +97,19 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Banner 1 -->
-                <img id="bg-bann-1" class="d-block w-100" src="./assets/img/banners/banner-1/bg-banner-1.png"
+                <img id="bg-bann-1" class="d-block w-100" src="./assets/img/banners/banner-1/banner-complete-1.png"
                     alt="First slide">
                 <!-- Caption 1 -->
                 <div id="carousel-captions-1" class="carousel-caption d-md-block">
-                    <p id="p-1-bann-1" class="bernina-sans-light">Prueba genética,</p>
+                    <!-- <p id="p-1-bann-1" class="bernina-sans-light">Prueba genética,</p>
                     <h1 id="h1-2-bann-1" class="bernina-sans-extrabold">Cáncer hereditario</h1>
                     <p id="p-2-bann-1" class="bernina-sans-light">
                         61 Genes asociados a
                         <span class="bernina-sans-extrabold">
                             10 tipos de cáncer.
                         </span>
-                    </p>
-                    <img id="img-bann-1" src="./assets/img/banners/banner-1/img-banner-1.png" alt="img-bann-1">
+                    </p> -->
+                    <!-- <img id="img-bann-1" src="./assets/img/banners/banner-1/img-banner-1.png" alt="img-bann-1"> -->
                     <button id="btn-banner-1" class="bernina-narrow-extrabold">Saber más</button>
                 </div>
             </div>
@@ -163,10 +165,18 @@
             </div>
         </div>
         <a class="carousel-control-prev" href="#carousel-img" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+                class="carousel-control-prev-icon animate__animated animate__infinite animate__fadeInRight infinite"
+                aria-hidden="true"
+                style="--animate-duration: 1.5s;"
+            ></span>
         </a>
         <a class="carousel-control-next" href="#carousel-img" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+                class="carousel-control-next-icon animate__animated animate__infinite animate__fadeInLeft infinite"
+                aria-hidden="true"
+                style="--animate-duration: 1.5s;"
+            ></span>
         </a>
     </div>
 
@@ -174,7 +184,7 @@
     <section>
         <div class="container">
             <div class="section"></div>
-            <div class="header">
+            <div class="header animate__animated animate__fadeInLeft">
                 <h1 id="width-screen" class="sans-font-bold">Conoce</h1>
                 <p class="sans-font-light">nuestros</p>
                 <h1 id="height-screen" class="sans-font-bold">servicios.</h1>
@@ -211,16 +221,18 @@
                 <!-- </div> -->
                 <div id="static-modal-title">
                     <h1 class="sans-font">Toma de muestra</h1>
-                    <p>La salud y bienestar de tu familia en <span>cuatro rápidos pasos</span>.</p>
+                    <p class="sans-font">La salud y bienestar de tu familia en <span>cuatro rápidos pasos</span>.</p>
                 </div>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide modal-carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active banner-prop">
                             <!-- Banner 1 - Modal -->
-                            <img src="./assets/img/modal/white-bg.png" class="d-block w-100" alt="white-bg">
+                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
                             <!-- Caption 1 - Modal -->
-                            <div id="caption-modal-1" class="carousel-caption d-md-block">                                
-                                <div class="elipse"><div id="img-modal-1"></div></div>
+                            <div id="caption-modal-1" class="carousel-caption d-md-block">
+                                <div class="elipse">
+                                    <div id="img-modal-1"></div>
+                                </div>
                                 <h4 class="sans-font"><span class="sans-font-bold">1ro</span> ¡Agenda tu cita!</h4>
                                 <div class="line"></div>
                                 <p class="sans-font">
@@ -232,59 +244,72 @@
                         </div>
                         <div class="carousel-item banner-prop">
                             <!-- Banner 2 - Modal -->
-                            <img src="./assets/img/modal/white-bg.png" class="d-block w-100" alt="white-bg">
+                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
                             <!-- Caption 2 - Modal -->
-                            <div id="caption-modal-2" class="carousel-caption d-md-block">                                
-                                <div class="elipse"><div id="img-modal-2"></div></div>
+                            <div id="caption-modal-2" class="carousel-caption d-md-block">
+                                <div class="elipse">
+                                    <div id="img-modal-2"></div>
+                                </div>
                                 <h4 class="sans-font"><span class="sans-font-bold">2do</span> ¡Fácil y sin agujas!</h4>
                                 <div class="line"></div>
                                 <p class="sans-font">
-                                    El médico que te hará la prueba te indicará las instrucciones 
-                                    a seguir, para la recolección de tu muestra. <br/><br/>
+                                    El médico que te hará la prueba te indicará las instrucciones
+                                    a seguir, para la recolección de tu muestra. <br /><br />
                                     <span class="sans-font-bold">Nuestras pruebas son en saliva.</span>
                                 </p>
                             </div>
                         </div>
                         <div class="carousel-item banner-prop">
                             <!-- Banner 3 - Modal -->
-                            <img src="./assets/img/modal/white-bg.png" class="d-block w-100" alt="white-bg">
+                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
                             <!-- Caption 3 - Modal -->
-                            <div id="caption-modal-3" class="carousel-caption d-md-block">                                
-                                <div class="elipse"><div id="img-modal-3"></div></div>
-                                <h4 class="sans-font"><span class="sans-font-bold">3ro</span> Procesamiento de muestra</h4>
+                            <div id="caption-modal-3" class="carousel-caption d-md-block">
+                                <div class="elipse">
+                                    <div id="img-modal-3"></div>
+                                </div>
+                                <h4 class="sans-font"><span class="sans-font-bold">3ro</span> Procesamiento de muestra
+                                </h4>
                                 <div class="line"></div>
                                 <p class="sans-font">
-                                    Labopat utiliza el método de secuenciación de nueva generación 
-                                    (NGS, por sus siglas en inglés) para la identificación de mutaciones 
+                                    Labopat utiliza el método de secuenciación de nueva generación
+                                    (NGS, por sus siglas en inglés) para la identificación de mutaciones
                                     causales del cáncer en un paciente.
                                     <br><br>
-                                    Esta tecnología permite detectar diferentes variaciones en la secuencia, 
-                                    tales como inserciones, deleciones, translocaciones, entre otros. 
+                                    Esta tecnología permite detectar diferentes variaciones en la secuencia,
+                                    tales como inserciones, deleciones, translocaciones, entre otros.
                                 </p>
                             </div>
                         </div>
                         <div class="carousel-item banner-prop">
                             <!-- Banner 4 - Modal -->
-                            <img src="./assets/img/modal/white-bg.png" class="d-block w-100" alt="white-bg">
+                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
                             <!-- Caption 4 - Modal -->
-                            <div id="caption-modal-4" class="carousel-caption d-md-block">                                
-                                <div class="elipse"><div id="img-modal-4"></div></div>
+                            <div id="caption-modal-4" class="carousel-caption d-md-block">
+                                <div class="elipse">
+                                    <div id="img-modal-4"></div>
+                                </div>
                                 <h4 class="sans-font"><span class="sans-font-bold">4to</span> Entrega de resultados</h4>
                                 <div class="line"></div>
                                 <p class="sans-font">
-                                    Los resultados son 100% confidenciales y estarán 
-                                    disponibles en el tiempo que te sea indicado. 
+                                    Los resultados son 100% confidenciales y estarán
+                                    disponibles en el tiempo que te sea indicado.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="top: -100px">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="top: -100px;">
+                        <span
+                            class="carousel-control-prev-icon animate__animated animate__infinite animate__fadeInRight infinite"
+                            aria-hidden="true"
+                            style="--animate-duration: 1.5s;"
+                        ></span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="top: -100px">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="top: -100px;">
+                        <span
+                            class="carousel-control-next-icon animate__animated animate__infinite animate__fadeInLeft infinite"
+                            aria-hidden="true"
+                            style="--animate-duration: 1.5s;"
+                        ></span>
                     </a>
                 </div>
             </div>
@@ -385,7 +410,8 @@
                 <input type="number" id="cellphone" placeholder="Teléfono" autocomplete="off">
             </div>
             <div class="message-form">
-                <textarea id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí" spellcheck="false"></textarea>
+                <textarea id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"
+                    spellcheck="false"></textarea>
             </div>
             <div class="button-form">
                 <button class="sans-font-light">Enviar</button>
