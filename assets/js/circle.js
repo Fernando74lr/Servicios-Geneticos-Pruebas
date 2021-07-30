@@ -5,15 +5,17 @@ $(document).ready(function() {
     $('.modal-carousel').carousel({
         interval: false
     })
-
+    
     // $('#width-screen').html(`${window.outerWidth}`);
     // $('#height-screen').html(`${window.outerHeight}`);
     
     var radius = 0;
     if (window.innerWidth < 450) {
         radius = 410;
+        console.log('1');
     } else {
         radius = 750;
+        console.log('2');
     }
     var fields = $('.itemDot');
     var container = $('.dotCircle');
@@ -23,6 +25,7 @@ $(document).ready(function() {
     var height = container.height();
     var angle = 0,
         step = (2 * Math.PI) / fields.length;
+    
     fields.each(function() {
         var x = Math.round(width / 2 + radius * Math.cos(angle) - $(this).width() / 2);
         var y = Math.round(height / 2 + radius * Math.sin(angle) - $(this).height() / 2);

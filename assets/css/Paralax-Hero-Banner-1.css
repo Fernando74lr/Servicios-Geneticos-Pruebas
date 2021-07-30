@@ -1,0 +1,63 @@
+@media (max-width: 450px) {
+  div.jumbotron.hero-technology {
+    background-position-x: -671px!important;
+  }
+}
+
+div.jumbotron.hero-technology {
+  color: #fff;
+  text-align: center;
+  background: url('../../assets/img/cancer_tests/cancer_tests_bg.png');
+  background-size: cover;
+  background-position: center top;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  color: #fff;
+  font-weight: 500;
+}
+
+p.hero-subtitle {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 10px 15px;
+  background-color: rgba(0,0,0,0.1);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+  font-weight: 500;
+}
+
+.step-heading {
+  color: #000000;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+.step-parag {
+  color: #000000;
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+#steps-warning {
+  font-size: 18px;
+  color: #027d7e;
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+}
+
+#steps-warning-2 {
+  font-size: 33px;
+  color: #ff7b00;
+  font-weight: bold;
+  font-family: "Bernina Sans";
+  text-align: center;
+}
+

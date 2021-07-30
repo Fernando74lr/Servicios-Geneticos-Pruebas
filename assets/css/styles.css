@@ -1,0 +1,33 @@
+#btn-request-test {
+  position: absolute;
+  margin-top: 15px;
+}
+
+#form-cancer-tests {
+  height: 145px;
+  filter: drop-shadow(3.214px 3.83px 3.5px rgba(0,0,0,0.2));
+  background-color: #c6e6df;
+  border: 0px solid #000000;
+}
+
+#heading-form {
+  font-size: 20px;
+  color: #007f7e;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+.input-forms-cancer::placeholder {
+  color: #00827f;
+}
+
+.input-forms-cancer:focus {
+  outline: none;
+}
+
+.input-forms-cancer {
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+

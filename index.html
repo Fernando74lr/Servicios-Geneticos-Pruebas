@@ -1,440 +1,286 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./assets/img/logo-and-ico/logo.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/home/navbar.css">
-    <link rel="stylesheet" href="./assets/css/home/carousel.css">
-    <link rel="stylesheet" href="./assets/css/home/description.css">
-    <link rel="stylesheet" href="./assets/css/home/circle-carousel.css">
-    <link rel="stylesheet" href="./assets/css/home/form.css">
-    <link rel="stylesheet" href="./assets/css/home/footer.css">
-    <link rel="stylesheet" href="./assets/css/home/modal.css">
-    <!-- Bootstrap CSS v4.3.1 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Bootstrap JS v4.3.1 -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- FontAwesome v5.13 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Circle -->
-    <script src="./assets/js/circle.js"></script>
-    <link rel="stylesheet" href="./assets/css/circle.css">
-    <!-- <link rel="stylesheet" href="./extra_small_devices.css"> -->
-    <title>Servicios genéticos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>servicios-geneticos-bs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/fonts-and-colors.css">
+    <link rel="stylesheet" href="assets/css/home/carousel.css">
+    <link rel="stylesheet" href="assets/css/home/circle-carousel.css">
+    <link rel="stylesheet" href="assets/css/home/circle.css">
+    <link rel="stylesheet" href="assets/css/home/footer.css">
+    <link rel="stylesheet" href="assets/css/home/modal.css">
+    <link rel="stylesheet" href="assets/css/home/navbar.css">
+    <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner.css">
+    <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner-1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Video-Parallax-Background-v2.css">
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid sans-font">
-            <div class="d-flex flex-grow-1">
-                <img id="logo-navbar" src="./assets/img/logo-and-ico/logo-navbar.png" alt="logo-navbar">
-            </div>
-            <button id="button-menu" class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i id="icon-menu" class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar-list">
-                <ul id="ul-items" class="navbar-nav ms-auto flex-nowrap">
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Pruebas</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">FAQ</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <a href="#" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item navbar-text sans-font-light">
-                        <button id="btn-labopat" class="navbar-text">LABOPAT</button>
-                    </li>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
+        <div class="container"><img src="assets/img/logo-and-ico/logo-navbar.png"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Source Sans Pro', sans-serif;font-size: 23px;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Pruebas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Contacto</a></li>
+                    <li class="nav-item" style="text-align: center;"><button class="btn btn-primary border rounded-pill" type="button" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: var(--bluegreen);background-color: transparent!important;width: 120px;font-size: 23px;height: 35px;padding: 0 0;margin-top: 6px;margin-left: 5px;">LABOPAT</button></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Carousel -->
-    <div id="carousel-img" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel" data-interval="8000" style="--animate-duration: 1.5s;">
-        <!-- Indicators -->
-        <ol id="indicators" class="carousel-indicators">
-            <li data-target="#carousel-img" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-img" data-slide-to="1"></li>
-            <li data-target="#carousel-img" data-slide-to="2"></li>
-            <li data-target="#carousel-img" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- Banner 1 -->
-                <img id="bg-bann-1" class="d-block w-100" src="./assets/img/banners/banner-1/banner-complete-1.png"
-                    alt="First slide">
-                <!-- Caption 1 -->
-                <div id="carousel-captions-1" class="carousel-caption d-md-block">
-                    <!-- <p id="p-1-bann-1" class="bernina-sans-light">Prueba genética,</p>
-                    <h1 id="h1-2-bann-1" class="bernina-sans-extrabold">Cáncer hereditario</h1>
-                    <p id="p-2-bann-1" class="bernina-sans-light">
-                        61 Genes asociados a
-                        <span class="bernina-sans-extrabold">
-                            10 tipos de cáncer.
-                        </span>
-                    </p>
-                    <img id="img-bann-1" src="./assets/img/banners/banner-1/img-banner-1.png" alt="img-bann-1"> -->
-                    <button id="btn-banner-1" class="bernina-narrow-extrabold">Saber más</button>
-                </div>
-            </div>
-            <!-- "width:1350px; height:293px; -->
-            <div id="carousel-item-bann-2" class="carousel-item">
-                <!-- Banner 2 -->
-                <img id="bg-bann-2" class="d-block w-100" src="./assets/img/banners/banner-2/banner-complete-2.png" alt="Second slide">
-                <!-- Caption 2 -->
-                <div id="carousel-captions-1" class="carousel-caption d-md-block">
-                    <!-- <p id="p-1-bann-2" class="bernina-sans-light">
-                        Conozca los beneficios de las pruebas
-                        genéticas para usted y su familia.
-                    </p>
-                    <img id="img-bann-2" href="#carousel-img" role="button" data-slide="prev"
-                        src="./assets/img/banners/banner-2/img-family-banner-2.png" alt="img-bann-2"> -->
-                    <button id="btn-banner-2" class="bernina-narrow-extrabold">Saber más</button>
-                </div>
-            </div>
-            <div class="carousel-item" id="bann-xd-3">
-                <!-- Banner 3 -->
-                <img id="bg-bann-3" class="d-block w-100" src="./assets/img/banners/banner-3/banner-complete-3.png"
-                    alt="Third slide">
-                <!-- Caption 3 -->
-                <div id="carousel-captions-1" class="carousel-caption d-md-block">
-                    <!-- <p id="p-1-bann-3" class="bernina-sans-light">
-                        ¿Debería tomar una prueba genética?
-                    </p>
-                    <p id="p-2-bann-3" class="bernina-sans-light">
-                        Realice el cuestionario de <span class="bernina-sans-extrabold">auto exclusión</span>
-                        para pruebas de cáncer hereditario.
-                    </p>
-                    <p id="p-3-bann-3" class="bernina-sans-light">
-                        *El resultado de este cuestionario no sustituye la opinión de su médico.
-                    </p>
-                    <img id="img-bann-3" href="#carousel-img" role="button" data-slide="next"
-                        src="./assets/img/banners/banner-3/img-banner-3.png" alt="img-bann-3"> -->
-                    <button id="btn-banner-3" class="bernina-narrow-extrabold">Iniciar cuestionario</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <!-- Banner 4 -->
-                <img id="bg-bann-4" class="d-block w-100" src="./assets/img/banners/banner-4/banner-complete-4.png"
-                    alt="Third slide">
-                <!-- Caption 4 -->
-                <div id="carousel-captions" class="carousel-caption d-md-block">
-                    <!-- <h1 id="h1-no-bg" class="bernina-sans-light">PRUEBA EN SALIVA</h1>
-                    <div id="div-bg">
-                        <h1 id="h1-bg" class="bernina-sans-regular">¡FÁCIL Y SIN AGUJAS!</h1>
-                    </div>
-                    <p class="bernina-sans-regular">Contamos con kits pediátricos</p>
-                    <img id="img-bann-4" src="./assets/img/banners/banner-4/img-banner-4.png" alt="img-bann-4"> -->
-                    <button id="btn-banner-4" class="bernina-narrow-extrabold">Más información</button>
-                </div>
-            </div>
+            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/home/banners/banner-complete-1.png" alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/home/banners/banner-complete-2.png" alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/home/banners/banner-complete-3.png" alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/home/banners/banner-complete-4.png" alt="Slide Image"></div>
         </div>
-        <a class="carousel-control-prev" href="#carousel-img" role="button" data-slide="prev">
-            <span
-                class="carousel-control-prev-icon animate__animated animate__infinite animate__fadeInRight infinite"
-                aria-hidden="true"
-                style="--animate-duration: 1.5s;"
-            ></span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-img" role="button" data-slide="next">
-            <span
-                class="carousel-control-next-icon animate__animated animate__infinite animate__fadeInLeft infinite"
-                aria-hidden="true"
-                style="--animate-duration: 1.5s;"
-            ></span>
-        </a>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="3"></li>
+        </ol>
     </div>
-
-    <!-- Section description -->
-    <section>
+    <section id="description" style="margin-top: 40px;">
         <div class="container">
-            <div class="section"></div>
-            <div class="header animate__animated animate__fadeInLeft">
-                <h1 id="width-screen" class="sans-font-bold">Conoce</h1>
-                <p class="sans-font-light">nuestros</p>
-                <h1 id="height-screen" class="sans-font-bold">servicios.</h1>
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-xl-5">
+                    <div style="font-family: 'Source Sans Pro', sans-serif;">
+                        <h1 style="color: #6F83D4;font-family: 'Source Sans Pro', sans-serif;font-weight: bold;font-size: 35pt;margin-bottom: -46px;">Conoce</h1>
+                        <p style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;font-size: 100px;margin-bottom: -28px;margin-left: 10px;">nuestros</p>
+                        <h1 style="color: #6F83D4;font-weight: bold;margin-bottom: 0;margin-left: 173px;font-size: 35pt;">servicios</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-7">
+                    <div>
+                        <h4 style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;color: #000000;">Somos un laboratorio con más de 30 años de experiencia.</h4>
+                        <p style="font-size: 15pt;text-align: justify;">Labopat a través de su área de Servicios Genéticos ofrece diferentes pruebas genéticas con la mejor y más avanzada tecnología, así como el mejor equipo de especialistas y profesionales de la salud.<br></p><button class="btn btn-primary border rounded-pill bernina-sans-regular" type="button" style="font-size: 18px;width: 420px;font-family: jaf-bernina-sans, sans-serif;font-weight: 400;font-style: normal;" data-toggle="modal" data-target=".bd-example-modal-xl" data-bs-target="#modal" data-bs-toggle="modal">CONOCE CÓMO ES LA TOMA DE MUESTRA</button><!-- Modal for description -->
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div id="modal-1" class="modal-content">
+            <!-- <div class="modal-header"> -->
+            <!-- <h5 class="modal-title">Modal title</h5> -->
+            <button id="btn-close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- </div> -->
+            <div id="static-modal-title">
+                <h1 class="sans-font">Toma de muestra</h1>
+                <p class="sans-font">La salud y bienestar de tu familia en <span>cuatro rápidos pasos</span>.</p>
             </div>
-            <div class="title">
-                <h4 class="sans-font-bold">Somos un laboratorio con más de 30 años de experiencia.</h4>
+            <div id="carouselExampleIndicators" class="carousel slide modal-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active banner-prop">
+                        <!-- Banner 1 - Modal -->
+                        <img src="assets/img/home/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
+                        <!-- Caption 1 - Modal -->
+                        <div id="caption-modal-1" class="carousel-caption d-md-block">
+                            <div class="elipse">
+                                <div id="img-modal-1"></div>
+                            </div>
+                            <h4 class="sans-font"><span class="sans-font-bold">1ro</span> ¡Agenda tu cita!</h4>
+                            <div class="line"></div>
+                            <p class="sans-font">
+                                Primero ponte en contacto con nosotros.<br><br>
+                                Nos puedes contactar en línea enviando un mensaje o por teléfono; te
+                                atenderemos por llamada o WhatsApp.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-prop">
+                        <!-- Banner 2 - Modal -->
+                        <img src="assets/img/home/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
+                        <!-- Caption 2 - Modal -->
+                        <div id="caption-modal-2" class="carousel-caption d-md-block">
+                            <div class="elipse">
+                                <div id="img-modal-2"></div>
+                            </div>
+                            <h4 class="sans-font"><span class="sans-font-bold">2do</span> ¡Fácil y sin agujas!</h4>
+                            <div class="line"></div>
+                            <p class="sans-font">
+                                El médico que te hará la prueba te indicará las instrucciones
+                                a seguir, para la recolección de tu muestra. <br /><br />
+                                <span class="sans-font-bold">Nuestras pruebas son en saliva.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-prop">
+                        <!-- Banner 3 - Modal -->
+                        <img src="assets/img/home/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
+                        <!-- Caption 3 - Modal -->
+                        <div id="caption-modal-3" class="carousel-caption d-md-block">
+                            <div class="elipse">
+                                <div id="img-modal-3"></div>
+                            </div>
+                            <h4 class="sans-font"><span class="sans-font-bold">3ro</span> Procesamiento de muestra
+                            </h4>
+                            <div class="line"></div>
+                            <p class="sans-font">
+                                Labopat utiliza el método de secuenciación de nueva generación
+                                (NGS, por sus siglas en inglés) para la identificación de mutaciones
+                                causales del cáncer en un paciente.
+                                <br><br>
+                                Esta tecnología permite detectar diferentes variaciones en la secuencia,
+                                tales como inserciones, deleciones, translocaciones, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-prop">
+                        <!-- Banner 4 - Modal -->
+                        <img src="assets/img/home/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
+                        <!-- Caption 4 - Modal -->
+                        <div id="caption-modal-4" class="carousel-caption d-md-block">
+                            <div class="elipse">
+                                <div id="img-modal-4"></div>
+                            </div>
+                            <h4 class="sans-font"><span class="sans-font-bold">4to</span> Entrega de resultados</h4>
+                            <div class="line"></div>
+                            <p class="sans-font">
+                                Los resultados son 100% confidenciales y estarán
+                                disponibles en el tiempo que te sea indicado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="top: -100px;">
+                    <span
+                        class="carousel-control-prev-icon animate__animated animate__infinite animate__fadeInRight infinite"
+                        aria-hidden="true"
+                        style="--animate-duration: 1.5s;"
+                    ></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="top: -100px;">
+                    <span
+                        class="carousel-control-next-icon animate__animated animate__infinite animate__fadeInLeft infinite"
+                        aria-hidden="true"
+                        style="--animate-duration: 1.5s;"
+                    ></span>
+                </a>
             </div>
-            <div class="description">
-                <p>
-                    Labopat a través de su área de Servicios Genéticos ofrece
-                    diferentes
-                    pruebas genéticas con la mejor y más avanzada tecnología, así como
-                    el mejor equipo de especialistas y profesionales de la salud.
-                </p>
-            </div>
-            <div class="btn-section">
-                <button class="bernina-sans-regulart" data-toggle="modal" data-target=".bd-example-modal-xl">
-                    CONOCE CÓMO ES LA TOMA DE MUESTRA
-                </button>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section class="d-xl-flex" id="services" style="background: url(&quot;assets/img/home/services/bg-woman-tube.png&quot;) right / auto no-repeat;height: 603px;margin-top: 80px;"><!-- Section buttons -->
+<section id="btns-baby">
+    <div id="buttons-container">
+        <div class="holderCircle">
+            <div class="dotCircle">
+                <span class="itemDot active itemDot1" data-tab="1">
+                    <img src="assets/img/home/services/cancer.png" alt="cancer">
+                </span>
+                <span class="itemDot itemDot2" data-tab="2">
+                    <img id="cardiologia" src="assets/img/home/services/cardiologia.png" alt="cardiologia">
+                </span>
+                <span class="itemDot itemDot3" data-tab="3">
+                    <img src="assets/img/home/services/dermatologia.png" alt="dermatologia">
+                </span>
+                <span class="itemDot itemDot4" data-tab="4">
+                    <img id="endocrinologia" src="assets/img/home/services/endocrinologia.png"
+                        alt="endocrinologia">
+                </span>
+                <span class="itemDot itemDot5" data-tab="5">
+                    <img src="assets/img/home/services/exoma.png" alt="exoma">
+                </span>
+                <span class="itemDot itemDot6" data-tab="6">
+                    <img src="assets/img/home/services/hematologia.png" alt="hematologia">
+                </span>
+                <span class="itemDot itemDot7" data-tab="7">
+                    <img src="assets/img/home/services/inmunologia.png" alt="inmunologia">
+                </span>
+                <span class="itemDot itemDot8" data-tab="8">
+                    <img src="assets/img/home/services/nefrologia.png" alt="nefrologia">
+                </span>
+                <span class="itemDot itemDot9" data-tab="9">
+                    <img src="assets/img/home/services/neurologia.png" alt="neurologia">
+                </span>
+                <span class="itemDot itemDot10" data-tab="10">
+                    <img id="oftalmologia" src="assets/img/home/services/oftalmologia.png" alt="oftalmologia">
+                </span>
+                <span class="itemDot itemDot11" data-tab="11">
+                    <img id="pediatria" src="assets/img/home/services/pediatria.png" alt="pediatria">
+                </span>
+                <span class="itemDot itemDot12" data-tab="12">
+                    <img id="tamiz" src="assets/img/home/services/tamiz-recien-nacido.png"
+                        alt="tamiz-recien-nacido">
+                </span>
+                <span class="itemDot itemDot13" data-tab="13">
+                    <img src="assets/img/home/services/trastornos-metabolicos.png" alt="trastornos-metabolicos">
+                </span>
+            </div>
 
-    <!-- Modal for description -->
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div id="modal-1" class="modal-content">
-                <!-- <div class="modal-header"> -->
-                <!-- <h5 class="modal-title">Modal title</h5> -->
-                <button id="btn-close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <!-- </div> -->
-                <div id="static-modal-title">
-                    <h1 class="sans-font">Toma de muestra</h1>
-                    <p class="sans-font">La salud y bienestar de tu familia en <span>cuatro rápidos pasos</span>.</p>
-                </div>
-                <div id="carouselExampleIndicators" class="carousel slide modal-carousel" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active banner-prop">
-                            <!-- Banner 1 - Modal -->
-                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
-                            <!-- Caption 1 - Modal -->
-                            <div id="caption-modal-1" class="carousel-caption d-md-block">
-                                <div class="elipse">
-                                    <div id="img-modal-1"></div>
-                                </div>
-                                <h4 class="sans-font"><span class="sans-font-bold">1ro</span> ¡Agenda tu cita!</h4>
-                                <div class="line"></div>
-                                <p class="sans-font">
-                                    Primero ponte en contacto con nosotros.<br><br>
-                                    Nos puedes contactar en línea enviando un mensaje o por teléfono; te
-                                    atenderemos por llamada o WhatsApp.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item banner-prop">
-                            <!-- Banner 2 - Modal -->
-                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
-                            <!-- Caption 2 - Modal -->
-                            <div id="caption-modal-2" class="carousel-caption d-md-block">
-                                <div class="elipse">
-                                    <div id="img-modal-2"></div>
-                                </div>
-                                <h4 class="sans-font"><span class="sans-font-bold">2do</span> ¡Fácil y sin agujas!</h4>
-                                <div class="line"></div>
-                                <p class="sans-font">
-                                    El médico que te hará la prueba te indicará las instrucciones
-                                    a seguir, para la recolección de tu muestra. <br /><br />
-                                    <span class="sans-font-bold">Nuestras pruebas son en saliva.</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item banner-prop">
-                            <!-- Banner 3 - Modal -->
-                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
-                            <!-- Caption 3 - Modal -->
-                            <div id="caption-modal-3" class="carousel-caption d-md-block">
-                                <div class="elipse">
-                                    <div id="img-modal-3"></div>
-                                </div>
-                                <h4 class="sans-font"><span class="sans-font-bold">3ro</span> Procesamiento de muestra
-                                </h4>
-                                <div class="line"></div>
-                                <p class="sans-font">
-                                    Labopat utiliza el método de secuenciación de nueva generación
-                                    (NGS, por sus siglas en inglés) para la identificación de mutaciones
-                                    causales del cáncer en un paciente.
-                                    <br><br>
-                                    Esta tecnología permite detectar diferentes variaciones en la secuencia,
-                                    tales como inserciones, deleciones, translocaciones, entre otros.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item banner-prop">
-                            <!-- Banner 4 - Modal -->
-                            <img src="./assets/img/modal/bg-transparent.png" class="d-block w-100" alt="white-bg">
-                            <!-- Caption 4 - Modal -->
-                            <div id="caption-modal-4" class="carousel-caption d-md-block">
-                                <div class="elipse">
-                                    <div id="img-modal-4"></div>
-                                </div>
-                                <h4 class="sans-font"><span class="sans-font-bold">4to</span> Entrega de resultados</h4>
-                                <div class="line"></div>
-                                <p class="sans-font">
-                                    Los resultados son 100% confidenciales y estarán
-                                    disponibles en el tiempo que te sea indicado.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="top: -100px;">
-                        <span
-                            class="carousel-control-prev-icon animate__animated animate__infinite animate__fadeInRight infinite"
-                            aria-hidden="true"
-                            style="--animate-duration: 1.5s;"
-                        ></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="top: -100px;">
-                        <span
-                            class="carousel-control-next-icon animate__animated animate__infinite animate__fadeInLeft infinite"
-                            aria-hidden="true"
-                            style="--animate-duration: 1.5s;"
-                        ></span>
-                    </a>
+            <div class="contentCircle">
+                <div class="CirItem active CirItem1">
+                    <h1 id="carousel-title" class="sans-font-bold">
+                        Contamos con pruebas en las siguientes áreas clínicas:
+                    </h1>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Section buttons -->
-    <section id="btns-baby">
-        <div id="buttons-container">
-            <div class="holderCircle">
-                <div class="dotCircle">
-                    <span class="itemDot active itemDot1" data-tab="1">
-                        <img src="./assets/img/circle-carousel/cancer.png" alt="cancer">
-                    </span>
-                    <span class="itemDot itemDot2" data-tab="2">
-                        <img id="cardiologia" src="./assets/img/circle-carousel/cardiologia.png" alt="cardiologia">
-                    </span>
-                    <span class="itemDot itemDot3" data-tab="3">
-                        <img src="./assets/img/circle-carousel/dermatologia.png" alt="dermatologia">
-                    </span>
-                    <span class="itemDot itemDot4" data-tab="4">
-                        <img id="endocrinologia" src="./assets/img/circle-carousel/endocrinologia.png"
-                            alt="endocrinologia">
-                    </span>
-                    <span class="itemDot itemDot5" data-tab="5">
-                        <img src="./assets/img/circle-carousel/exoma.png" alt="exoma">
-                    </span>
-                    <span class="itemDot itemDot6" data-tab="6">
-                        <img src="./assets/img/circle-carousel/hematologia.png" alt="hematologia">
-                    </span>
-                    <span class="itemDot itemDot7" data-tab="7">
-                        <img src="./assets/img/circle-carousel/inmunologia.png" alt="inmunologia">
-                    </span>
-                    <span class="itemDot itemDot8" data-tab="8">
-                        <img src="./assets/img/circle-carousel/nefrologia.png" alt="nefrologia">
-                    </span>
-                    <span class="itemDot itemDot9" data-tab="9">
-                        <img src="./assets/img/circle-carousel/neurologia.png" alt="neurologia">
-                    </span>
-                    <span class="itemDot itemDot10" data-tab="10">
-                        <img id="oftalmologia" src="./assets/img/circle-carousel/oftalmologia.png" alt="oftalmologia">
-                    </span>
-                    <span class="itemDot itemDot11" data-tab="11">
-                        <img id="pediatria" src="./assets/img/circle-carousel/pediatria.png" alt="pediatria">
-                    </span>
-                    <span class="itemDot itemDot12" data-tab="12">
-                        <img id="tamiz" src="./assets/img/circle-carousel/tamiz-recien-nacido.png"
-                            alt="tamiz-recien-nacido">
-                    </span>
-                    <span class="itemDot itemDot13" data-tab="13">
-                        <img src="./assets/img/circle-carousel/trastornos-metabolicos.png" alt="trastornos-metabolicos">
-                    </span>
+</section></section>
+    <section id="form" style="margin-top: 150px;margin-bottom: 50px;">
+        <h1 style="font-family: 'Source Sans Pro', sans-serif;font-size: 70px;color: #00827E;padding-left: 190px;font-weight: 300;margin-bottom: 40px;">Contáctanos</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-4 text-start" style="margin-left: 80px;">
+                    <p style="font-size: 17px;"><strong>Horario de Atención a clientes.</strong><br><br>Lunes a Viernes: 9:00 am - 5:00 pm<br>Sábado 9:00 am - 12:00 pm<br>222 375 4152 ext. 105<br>55 6917 6455<br><br><strong>*Los domingos no tenemos servicio.</strong><br><br><strong>Atención a clientes</strong><br>servicios_genéticos@labopat.mx<br><br></p>
                 </div>
-
-                <div class="contentCircle">
-                    <div class="CirItem active CirItem1">
-                        <h1 id="carousel-title" class="sans-font-bold">
-                            Contamos con pruebas en las siguientes áreas clínicas:
-                        </h1>
+                <div class="col-md-6 col-xl-6">
+                    <form>
+                        <div class="row">
+                            <div class="col"><input class="form-control" type="text" id="name" style="margin-bottom: 20px;border-width: 1px;border-color: #00827E;border-radius: 3px;color: #00827E;font-size: 17px;font-family: 'Source Sans Pro', sans-serif;" placeholder="Nombre" required=""></div>
+                            <div class="col"><input class="form-control" type="text" id="lastname" style="margin-bottom: 20px;border-width: 1px;border-color: #00827E;border-radius: 3px;font-size: 17px;color: #00827E;font-family: 'Source Sans Pro', sans-serif;" placeholder="Apellido" required=""></div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col"><input class="form-control" type="email" id="email" style="margin-bottom: 20px;border-width: 1px;border-color: #00827E;border-radius: 3px;font-size: 17px;color: #00827E;font-family: 'Source Sans Pro', sans-serif;" placeholder="Email" required=""></div>
+                            <div class="col"><input class="form-control" type="number" id="cellphone" style="margin-bottom: 20px;border-width: 1px;border-color: #00827E;border-radius: 3px;font-size: 17px;color: #00827E;font-family: 'Source Sans Pro', sans-serif;" placeholder="Teléfono" required=""></div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col"><textarea id="message-form" style="width: 100%;border-width: 1px;border-color: #00827E;border-radius: 3px;font-size: 17px;color: #00827E;font-family: 'Source Sans Pro', sans-serif;height: 100px;" placeholder="Escribe tu mensaje aquí" autocomplete="off" spellcheck="false" required=""></textarea></div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="margin-top: 10px;"><button class="btn btn-primary" type="button">Enviar</button></div>
                     </div>
                 </div>
             </div>
         </div>
-        <img id="woman-tube" src="./assets/img/circle-carousel/right-bg/just-checking-2.png" alt="woman-tube">
-    </section>
-
-    <!-- Section form -->
-    <section id="contact-form">
-        <div class="container2">
-            <div class="header-contact">
-                <h1 class="sans-font-light">Contáctanos</h1>
-            </div>
-            <div class="description-contact">
-                <div>
-                    <span class="sans-font-bold">Horario de Atención a clientes.</span><br><br>
-                    <p>
-                        Lunes a Viernes: 9:00 am - 5:00 pm <br>
-                        Sábado 9:00 am - 12:00 pm <br>
-                        222 375 4152 ext. 105 <br>
-                        55 6917 6455 <br>
-                    </p>
-                    <span class="sans-font-bold">*Los domingos no tenemos servicio.</span><br><br>
-                    <span class="sans-font-bold">Atención a clientes</span><br>
-                    servicios_genéticos@labopat.mx
-                </div>
-            </div>
-            <div class="form-contact"></div>
-            <div class="name">
-                <input type="text" id="name" placeholder="Nombre" autocomplete="off">
-            </div>
-            <div class="lastname">
-                <input type="text" id="lastname" placeholder="Apellido" autocomplete="off">
-            </div>
-            <div class="email">
-                <input type="email" id="email" placeholder="Email" autocomplete="off">
-            </div>
-            <div class="cellphone">
-                <input type="number" id="cellphone" placeholder="Teléfono" autocomplete="off">
-            </div>
-            <div class="message-form">
-                <textarea id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"
-                    spellcheck="false"></textarea>
-            </div>
-            <div class="button-form">
-                <button class="sans-font-light">Enviar</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div id="bar"></div>
-        <div>
-            <p class="sans-font">
-                Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
-                Andrés Cholula, Puebla. <br>
-                Tel: 222 375 4152 / 55 6917 6455
-            </p>
-            <h5 class="sans-font-bold">
-                © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
-            </h5>
-        </div>
-    </footer>
-
+    </section><footer>
+    <div id="bar"></div>
+    <div>
+        <p>
+            Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
+            Andrés Cholula, Puebla. <br>
+            Tel: 222 375 4152 / 55 6917 6455
+        </p>
+        <h5>
+            © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
+        </h5>
+    </div>
+</footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/circle.js"></script>
+    <script src="assets/js/Paralax-Hero-Banner.js"></script>
+    <script src="assets/js/Video-Parallax-Background-v2.js"></script>
 </body>
 
 </html>

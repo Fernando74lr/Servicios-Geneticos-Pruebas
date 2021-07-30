@@ -1,0 +1,74 @@
+/* Font Source Sans Pro */
+
+/* Font Source Sans Bold */
+
+/* Font Source Sans Light */
+
+/* Bernina Sans Extrabold */
+
+/* Bernina Sans Regular */
+
+/* Bernina Sans Narrow Extrabold */
+
+/* Bernina Sans Narrow Light */
+
+/* Font Classes */
+
+.sans-font {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sans-font-bold {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sans-font-light {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bernina-sans-extrabold {
+  font-family: jaf-bernina-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bernina-sans-regular {
+  font-family: jaf-bernina-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bernina-narrow-extrabold {
+  font-family: jaf-bernina-sans-narrow, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bernina-narrow-light {
+  font-family: jaf-bernina-sans-narrow, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bernina-sans-light {
+  font-family: jaf-bernina-sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* Colors */
+
+:root {
+  --main-color: #6F83D4;
+  --shadow-main-color: #8d9cd6a2;
+  --white: #ffffff;
+  --orange: #FF7B00;
+  --black: #000000;
+  --gray: #3E4040;
+  --bluegreen: #00827E;
+}
+
