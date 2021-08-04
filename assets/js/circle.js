@@ -2,9 +2,9 @@ let i = 2;
 
 $(document).ready(function() {
 
-    $('.modal-carousel').carousel({
-        interval: false
-    })
+    // $('.modal-carousel').carousel({
+    //     interval: false
+    // })
     
     // $('#width-screen').html(`${window.outerWidth}`);
     // $('#height-screen').html(`${window.outerHeight}`);
@@ -14,7 +14,7 @@ $(document).ready(function() {
         radius = 410;
         console.log('1');
     } else {
-        radius = 750;
+        radius = 410;
         console.log('2');
     }
     var fields = $('.itemDot');

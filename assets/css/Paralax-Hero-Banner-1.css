@@ -7,9 +7,9 @@
 div.jumbotron.hero-technology {
   color: #fff;
   text-align: center;
-  background: url('../../assets/img/cancer_tests/cancer_tests_bg.png');
+  /*background: url('../../assets/img/risk_tests/bg-banner.png');*/
   background-size: cover;
-  background-position: center top;
+  /*background-position: center top;*/
   padding-top: 100px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
@@ -59,5 +59,16 @@ p.hero-subtitle {
   font-weight: bold;
   font-family: "Bernina Sans";
   text-align: center;
+}
+
+#tests_banner div.jumbotron.hero-technology {
+  color: #fff;
+  text-align: center;
+  background: url('../../assets/img/tests/bg-cover.png');
+  background-size: cover;
+  background-position: center top;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: local;
 }
 

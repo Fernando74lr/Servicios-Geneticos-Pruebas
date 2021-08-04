@@ -9,6 +9,17 @@ div.jumbotron.hero-technology {
   background-attachment: local;
 }
 
+div.jumbotron.hero-technology {
+  color: #fff;
+  text-align: center;
+  background: url('hero-background-technology.jpg');
+  background-size: cover;
+  background-position: center top;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: local;
+}
+
 h1.hero-title, h2.hero-title, h3.hero-title {
   text-shadow: 0 2px 2px rgba(0,0,0,0.3);
   color: #fff;

@@ -18,7 +18,7 @@
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   width: 100px;
-  border: 1px solid #6F83D4;
+  /* border: 1px solid #6F83D4; */
   border-radius: 15px;
   color: #6F83D4;
   height: 20px;
@@ -64,6 +64,7 @@
   margin: auto;
   z-index: 2;
 }
+
 
 .dotCircle .itemDot .forActive {
   width: 56px;
@@ -194,6 +195,17 @@
 	}
 } */
 
+@media only screen and (max-width: 450px) {
+    #buttons-container {
+      left: 0;
+      width: 100%;
+    }
+
+    #btn-modal {
+        width: 350px!important;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
   .CirItem.active {
     z-index: 1;
@@ -223,7 +235,7 @@
     padding-top: 0;
     width: 80px;
     height: 80px;
-    border: 1px solid #6F83D4;
+    /* border: 1px solid #6F83D4; */
     color: #fff;
     transition: 0.5s;
   }
@@ -246,9 +258,11 @@
 
 @media only screen and (max-width: 600px) {
   .contentCircle h1 {
-    margin-top: 100px;
-    font-size: 30px;
-    margin-left: 3px;
+    margin-top: 28px;
+    font-size: 24px!important;
+    margin-left: -52px;
+    padding: 58px;
+    line-height: 26px!important;
   }
 }
 
