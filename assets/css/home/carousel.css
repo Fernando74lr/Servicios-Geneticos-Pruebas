@@ -138,6 +138,11 @@ span {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #arrow-risk {
+    top: 495px!important;
+    left: 265px!important;
+  }
 }
 
 #arrow-risk {
@@ -148,8 +153,8 @@ span {
   border-right: 30px solid transparent;
   border-top: 35px solid var(--bluegreen);
   position: absolute;
-  top: 260px;
-  left: 225px;
+  top: 290px;
+  left: 395px;
 }
 
 #arrow-test {
@@ -341,7 +346,7 @@ button {
 
 #conoce-pruebas-risk {
   width: 499px;
-  height: 243px;
+  height: 276px;
   filter: drop-shadow(3.214px 3.83px 3.5px rgba(0,0,0,0.2));
   background-color: #00827f;
 }

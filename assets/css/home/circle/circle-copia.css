@@ -7,8 +7,8 @@
   }
   
   .holderCircle {
-    width: 600px;
-    height: 600px;
+    width: 640px;
+    height: 640px;
     border-radius: 100%;
     margin: 30px auto;
     position: relative;
@@ -26,8 +26,8 @@
   }
   
   .dotCircle {
-    width: 600px;
-    height: 600px;
+    width: 640px;
+    height: 640px;
     position: absolute;
     /* margin: auto; */
     top: 0;
@@ -354,12 +354,12 @@
       padding: 0 20px 0 20px;
     }
   }
-  
-  /* .w-100 {
-          width: 150%!important;
+
+@media only screen and (min-width: 600px) {
+    /* Title small devices */
+    .contentCircle h1 {
+        margin-top: 250px;
+        margin-left: -70px;
+        font-size: 45px;
       }
-      .d-block {
-          width: 20%!important;
-      } */
-  
-  
+}

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="./assets/img/logo-and-ico/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>servicios-geneticos-bs</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -13,179 +14,717 @@
     <link rel="stylesheet" href="assets/css/home/circle-carousel.css">
     <link rel="stylesheet" href="assets/css/home/circle.css">
     <link rel="stylesheet" href="assets/css/home/footer.css">
-    <link rel="stylesheet" href="assets/css/home/modal.css">
+    <!-- <link rel="stylesheet" href="assets/css/home/modal.css"> -->
+    <link rel="stylesheet" href="./assets/css/cancer_tests/cancer_tests_modals.css">
     <link rel="stylesheet" href="assets/css/home/navbar.css">
     <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner.css">
     <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner-1.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Video-Parallax-Background-v2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="animate__animated  animate__fadeIn">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
-        <div class="container"><img src="assets/img/logo-and-ico/logo-navbar.png"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Source Sans Pro', sans-serif;font-size: 23px;">
+        <div class="container"><img src="assets/img/logo-and-ico/logo-navbar.png"><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1"
+                style="font-family: 'Source Sans Pro', sans-serif;font-size: 23px;">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about_us.html" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tests.html" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Pruebas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Contacto</a></li>
-                    <li class="nav-item" style="text-align: center;"><button class="btn btn-primary border rounded-pill" type="button" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: var(--bluegreen);background-color: transparent!important;width: 120px;font-size: 23px;height: 35px;padding: 0 0;margin-top: 6px;margin-left: 5px;">LABOPAT</button></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"
+                            style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html"
+                            style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Sobre
+                            nosotros</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">
+                            Pruebas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="risks_tests.html"
+                                    style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                    de riesgo</a></li>
+                            <li><a class="dropdown-item" href="tests.html"
+                                    style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                    de diagnóstico</a></li>
+                            <li><a class="dropdown-item" href="cancer_tests.html"
+                                    style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                    de cáncer</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Salud
+                                    reproductiva</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"
+                            style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">FAQ</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"
+                            style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Contacto</a>
+                    </li>
+                    <li class="nav-item" style="text-align: center;"><button class="btn btn-primary border rounded-pill"
+                            type="button"
+                            style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: var(--bluegreen);background-color: transparent!important;width: 120px;font-size: 23px;height: 35px;padding: 0 0;margin-top: 6px;margin-left: 5px;">LABOPAT</button>
+                    </li>
                 </ul>
+
             </div>
         </div>
     </nav>
-    <div class="bg-light border rounded border-light hero-technology jumbotron py-5 px-4" id="cancer_tests_banner" style="height: 604px;">
-        <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center" id="conoce-pruebas" style="font-family: 'Source Sans Pro', sans-serif;background: var(--orange);">
-            <p class="hero-title" style="font-size: 54px;font-family: 'Source Sans Pro', sans-serif;text-align: center;line-height: 55px;">PRUEBAS GENÉTICAS PARA CÁNCER</p>
+    <div class="bg-light border rounded border-light hero-technology jumbotron py-5 px-4" id="cancer_tests_banner"
+        style="height: 604px;">
+        <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center"
+            id="conoce-pruebas" style="font-family: 'Source Sans Pro', sans-serif;background: var(--orange);">
+            <p class="hero-title"
+                style="font-size: 54px;font-family: 'Source Sans Pro', sans-serif;text-align: center;line-height: 55px;">
+                PRUEBAS GENÉTICAS PARA CÁNCER</p>
             <div id="barra-cancer"></div>
-            <div id="arrow" style="color: var(--orange);"></div>
+            <div id="arrow" class="animate__animated animate__infinite animate__fadeInDown infinite"
+                style="color: var(--orange);--animate-duration: 1.5s;"></div>
         </div>
     </div>
     <div id="cards-container" style="margin-top: 50px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center" style="margin-bottom: 30px;">
+                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Cáncer hereditario</h4>
-                            <p class="card-text">Prueba genética que analiza 61 genes, buscando alteraciones&nbsp;<br>cambios) en los genes evaluados que están asociados a un riesgo mayor de presentar cáncer. Los tipos de cáncer que se analizan en esta prueba son:</p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 35px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética que analiza 61 genes, buscando
+                                alteraciones&nbsp;<br>cambios) en los genes evaluados que están asociados a un riesgo
+                                mayor de presentar cáncer. Los tipos de cáncer que se analizan en esta prueba son:</p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 35px;" data-bs-target="#modal-cancer-here"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;margin-left: 110px;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Solicitar prueba</button></div>
+                    <div class="d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;margin-left: 110px;">
+                        <!-- Modal Cáncer Hereditario -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-cancer-here">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-cancer" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal" type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-cancer-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i class="far fa-check-circle fa-li text-primary"></i>Cáncer de mama
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de ovarios</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de útero</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer colorrectal</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer gástrico</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de páncreas</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de próstata
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de células renales
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer de tiroides</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Melanoma cutáneo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Cáncer de mama y ginecológico</h4>
-                            <p class="card-text">Prueba genética para detectar alteraciones en 37 genes que están asociados con:<br></p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 101px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética para detectar alteraciones en 37 genes que están
+                                asociados con:<br></p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 101px;" data-bs-target="#modal-mama-div" data-bs-toggle="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba<br></button></div>
+                    <div class="d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba<br></button>
+                    </div>
                 </div>
-                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col-md-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Síndrome de cáncer de mama y ovario hereditario</h4>
-                            <p class="card-text">Prueba genética específica para detectar mutaciones en los genes BRCA1 y BRCA2, los cuales están asociados con:<br><br><i class="far fa-check-circle" style="color: var(--bluegreen);"></i>&nbsp;Síndrome de cáncer de mama y ovario hereditario.</p>
+                            <p class="card-text">Prueba genética específica para detectar mutaciones en los genes BRCA1
+                                y BRCA2, los cuales están asociados con:<br><br><i class="far fa-check-circle"
+                                    style="color: var(--bluegreen);"></i>&nbsp;Síndrome de cáncer de mama y ovario
+                                hereditario.</p>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba</button></div>
+                    <div class="d-flex d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <!-- Modal Cáncer de Mama -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-mama-div">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-mama" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                    <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal-mama" type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-mama-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i class="far fa-check-circle fa-li text-primary"></i>Cáncer de mama
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Cowden</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de DICER1</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de cáncer de mama
+                                                    y ovario hereditario</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de cáncer de
+                                                    trompas de Falopio</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de cáncer gástrico
+                                                    difuso hereditario</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Li-Fraumeni
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Lynch</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Neurofibromatosis tipo 1
+                                                    (NF1)</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Peutz-Jeghers
+                                                    syndrome</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Cáncer colorrectal</h4>
-                            <p class="card-text">Prueba genética que detecta mutaciones en 29 genes que están asociados con:<br></p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 133px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética que detecta mutaciones en 29 genes que están asociados
+                                con:<br></p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 133px;" data-bs-target="#modal-colorrec-div"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba</button></div>
+                    <div class="d-flex d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <!-- Modal Cáncer de Mama -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-colorrec-div">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-colorrec" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                                            <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal-colorrec" type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-colorrec-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i class="far fa-check-circle fa-li text-primary"></i>Síndrome de
+                                                    Lynch
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Poliposis adenomatosa
+                                                    familiar</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Poliposis asociada al gen
+                                                    MUTYH</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Cáncer gástrico difuso
+                                                    hereditario</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Peutz-Jeghers
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de poliposis
+                                                    juvenil</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de poliposis
+                                                    serrada
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Li-Fraumeni
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Cowden</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de cáncer
+                                                    colorrectal-oligodoncia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Feocromocitoma y paraganglioma hereditario</h4>
-                            <p class="card-text">Prueba genética para identificar alteraciones en 14 genes, las cuales están asociados con:</p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 72px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética para identificar alteraciones en 14 genes, las cuales
+                                están asociados con:</p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 72px;" data-bs-target="#modal-feocro-div"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba</button></div>
+                    <div class="d-flex d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <!-- Modal Feocromocitoma Hereditario -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-feocro-div">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-feocro" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal-feocro" type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-feocro-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i class="far fa-check-circle fa-li text-primary"></i>Síndrome de
+                                                    Carney-Stratakis.
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de feocromocitoma
+                                                    y paraganglioma
+                                                    hereditario</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Neoplasia endocrina
+                                                    múltiple tipo 2</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Neurofibromatosis tipo 1
+                                                    (NF1)</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Von
+                                                    Hippel-Lindau</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col-lg-4 col-xl-4 d-flex d-lg-flex flex-column align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Cáncer de tiroides</h4>
-                            <p class="card-text">Prueba genética que detecta mutaciones en 11 genes, las cuales están asociadas a:</p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 137px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética que detecta mutaciones en 11 genes, las cuales están
+                                asociadas a:</p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 137px;" data-bs-target="#modal-tiro-div"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba</button></div>
+                    <div class="d-flex d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <!-- Modal Tiroides Hereditario -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-tiro-div">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-tiro" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal-tiro" type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-tiro-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i class="far fa-check-circle fa-li text-primary"></i>Complejo de
+                                                    Carney
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Cowden</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome DICER1</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Poliposis adenomatosa
+                                                    familiar</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Li-Fraumeni
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i> endocrina múltiple tipo 2
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col d-flex d-lg-flex flex-column justify-content-center align-items-center justify-content-lg-center align-items-xl-center" style="margin-bottom: 30px;">
+                <div class="col d-flex d-lg-flex flex-column justify-content-center align-items-center justify-content-lg-center align-items-xl-center"
+                    style="margin-bottom: 30px;">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Cáncer Leucemia / Síndrome mielodisplásico</h4>
-                            <p class="card-text">Prueba genética para detectar mutaciones en 47 genes que están asociados con:</p>
-                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#" style="margin-top: 70px;color: var(--bluegreen);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p class="card-text">Prueba genética para detectar mutaciones en 47 genes que están
+                                asociados con:</p>
+                            <div class="d-xl-flex justify-content-xl-end"><a class="link-tests" href="#"
+                                    style="margin-top: 70px;color: var(--bluegreen);" data-bs-target="#modal-leuc-div"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-flex justify-content-xl-end" style="padding-right: auto;padding-top: 20px;padding-left: auto;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar prueba</button></div>
+                    <div class="d-flex d-lg-flex justify-content-xl-end"
+                        style="padding-right: auto;padding-top: 20px;padding-left: auto;">
+                        <!-- Modal Leucemia Hereditario -->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-leuc-div">
+                            <div class="modal-dialog" role="document">
+                                <div id="modal-leuc" class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4> -->
+                                    <button id="btn-close-modal-leuc" type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <!-- </div> -->
+                                    <div class="modal-body">
+                                        <div class="col-xl-8" id="list-leuc-her">
+                                            <ul class="list-unstyled fa-ul">
+                                                <li><i
+                                                        class="far fa-check-circle fa-li text-primary"></i>Ataxia-telangiectasia
+                                                    (A-T)
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Bloom</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de deficiencia de
+                                                    reparación de
+                                                    desajuste constitutivo</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Costello</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Leucemia mieloide familiar
+                                                    aguda familial (AML) con el gen CEBPA mutado</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Trastorno plaquetario
+                                                    familiar con propensión
+                                                    a padecer malignidad mieloide</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Deficiencia GATA2</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de Li-Fraumeni
+                                                </li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Neurofibromatosis tipo 1
+                                                    (NF1)</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Síndrome de rotura Nijmegen
+                                                    (NBS)</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Disqueratosis congénita
+                                                    relacionada a TERT</li>
+                                                <li><i class="far fa-check-circle fa-li text-primary"
+                                                        style="color: var(--bluegreen);"></i>Disqueratosis congénita
+                                                    relacionada a TERC</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn border rounded-pill btn-orange" type="button"
+                            style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;margin-left: 110px;">Solicitar
+                            prueba</button>
+                    </div>
                 </div>
-                <div class="col d-lg-flex flex-column justify-content-lg-center align-items-xl-center new_columns" style="margin-bottom: 30px;"></div>
-                <div class="col d-lg-flex flex-column justify-content-lg-center align-items-xl-center new_columns" style="margin-bottom: 30px;"></div>
+                <div class="col d-lg-flex flex-column justify-content-lg-center align-items-xl-center new_columns"
+                    style="margin-bottom: 30px;"></div>
+                <div class="col d-lg-flex flex-column justify-content-lg-center align-items-xl-center new_columns"
+                    style="margin-bottom: 30px;"></div>
             </div>
         </div>
     </div>
     <div class="d-xl-flex justify-content-xl-center" id="description-biopsia" style="margin-top: 50px;">
-        <div id="border" style="border-width: 1px;border-color: var(--bluegreen);padding: 50px;padding-bottom: 30px;margin-right: 10px;margin-left: 10px;">
+        <div id="border"
+            style="border-width: 1px;border-color: var(--bluegreen);padding: 50px;padding-bottom: 30px;margin-right: 10px;margin-left: 10px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div>
                             <h1 id="biobsia-heading" style="text-align: left;">Biopsia Líquida</h1>
                         </div>
-                        <p id="text-biopsia">Cuando un paciente tiene cáncer, existen fragmentos de ADN que son liberados por las células tumorales al torrente sanguíneo, conocidos como ADN tumoral circulante (ctDNA). La biopsia líquida analiza el material tumoral presente en el torrente sanguíneo.<br><br>A través de la secuenciación digital de nueva generación, se busca encontrar&nbsp;reportar las opciones de tratamiento y terapias avaladas basadas en los genes aprobados por las guías de diagnóstico y tratamiento.</p>
+                        <p id="text-biopsia">Cuando un paciente tiene cáncer, existen fragmentos de ADN que son
+                            liberados por las células tumorales al torrente sanguíneo, conocidos como ADN tumoral
+                            circulante (ctDNA). La biopsia líquida analiza el material tumoral presente en el torrente
+                            sanguíneo.<br><br>A través de la secuenciación digital de nueva generación, se busca
+                            encontrar&nbsp;reportar las opciones de tratamiento y terapias avaladas basadas en los genes
+                            aprobados por las guías de diagnóstico y tratamiento.</p>
                     </div>
                     <div class="col-md-6" id="col-cancer-tests-biopsia-liq">
                         <div>
                             <h1 id="biobsia-heading-1" style="text-align: left;">¿Qué estudia la prueba?<br></h1>
-                            <p id="text-biopsia">La biopsia líquida detecta las mutaciones específicas de&nbsp;un tumor por medio de una muestra de sangre periférica.&nbsp;<br>&nbsp;<br>Esta prueba estudia 73 genes buscando:&nbsp;<br>&nbsp;<br>- 73 genes de mutaciones puntuales&nbsp;<br>- 23 genes de deleciones&nbsp;<br>- 6 genes de fusiones&nbsp;<br>- 18 genes de amplificaciones</p>
-                            <div class="d-xl-flex justify-content-xl-start"><a class="link-biopsia" href="#" style="color: var(--bluegreen);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-caret-right-fill" style="color: var(--bluegreen);margin-right: 10px;">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                            <p id="text-biopsia">La biopsia líquida detecta las mutaciones específicas de&nbsp;un tumor
+                                por medio de una muestra de sangre periférica.&nbsp;<br>&nbsp;<br>Esta prueba estudia 73
+                                genes buscando:&nbsp;<br>&nbsp;<br>- 73 genes de mutaciones puntuales&nbsp;<br>- 23
+                                genes de deleciones&nbsp;<br>- 6 genes de fusiones&nbsp;<br>- 18 genes de
+                                amplificaciones</p>
+                            <div class="d-xl-flex justify-content-xl-start"><a class="link-biopsia" href="#"
+                                    style="color: var(--bluegreen);" data-bs-target="#modal-biopsia-div"
+                                    data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        class="bi bi-caret-right-fill"
+                                        style="color: var(--bluegreen);margin-right: 10px;">
+                                        <path
+                                            d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                        </path>
                                     </svg>Conoce las pruebas</a></div>
-                            <div class="d-xl-flex justify-content-xl-end"><button class="btn border rounded-pill btn-orange" id="btn-request-test" type="button" style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Solicitar prueba</button></div>
+                            <div class="d-xl-flex justify-content-xl-end">
+                                <!-- Modal Biopsia Líquida Hereditario -->
+                                <div class="modal fade" role="dialog" tabindex="-1" id="modal-biopsia-div">
+                                    <div class="modal-dialog" role="document">
+                                        <div id="modal-biopsia" class="modal-content">
+                                            <!-- <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4> -->
+                                            <button id="btn-close-modal-biopsia" type="button" class="btn-close"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- </div> -->
+                                            <div class="modal-body">
+                                                <!-- AQUÍ ME QUEDÉ TODO: -->
+                                                <script>
+                                            // TODO: MODAL PARA BIOPSIA LÍQUIDA
+                                                </script>
+
+                                                <style>
+                                                    .red {
+                                                        border: 1px solid red;
+                                                    }
+
+                                                    .green {
+                                                        border: 1px solid green;
+                                                    }
+
+                                                    .black {
+                                                        border: 1px solid black;
+                                                    }
+
+                                                    .orange {
+                                                        border: 1px solid orange;
+                                                    }
+
+                                                </style>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-4" style="margin-right: -50px; ">
+                                                            <div id="list-biop">
+                                                                <p id="title-advant">Ventajas</p>
+                                                                <ul class="list-unstyled fa-ul">
+                                                                    <li style="font-size: 18px;"><i
+                                                                            class="far fa-check-circle fa-li text-primary"
+                                                                            style="color: var(--bluegreen);"></i>Refleja
+                                                                        el estatus global y molecular del tumor.</li>
+                                                                    <br>
+                                                                    <li style="font-size: 18px;"><i
+                                                                            class="far fa-check-circle fa-li text-primary"
+                                                                            style="color: var(--bluegreen);"></i>Informa
+                                                                        sobre las opciones de tratamiento dirigido,
+                                                                        incluyendo terapias aprobadas y ensayos clínicos
+                                                                        en estado avanzado.</li><br>
+                                                                    <li style="font-size: 18px;"><i
+                                                                            class="far fa-check-circle fa-li text-primary"
+                                                                            style="color: var(--bluegreen);"></i>Permite
+                                                                        realizar estudios a pacientes no aptos para una
+                                                                        biopsia convencional, o cuando el tejido
+                                                                        obtenido no es suficiente o imposibilita el
+                                                                        diagnóstico.</li><br>
+                                                                    <li style="font-size: 18px;"><i
+                                                                            class="far fa-check-circle fa-li text-primary"
+                                                                            style="color: var(--bluegreen);"></i>Si
+                                                                        requieren solamente dos tubos de muestra
+                                                                        sanguínea en una sola extracción.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm">
+                                                            <div id="list-colorrec-her" style="margin-right: 50px;"
+                                                                class="tech">
+                                                                <p id="title-tech">Tecnología del estudio</p>
+                                                                <p id="text-tech"
+                                                                    style="text-align:justify; word-break:break-all; font-size: 18px;">
+                                                                    La secuenciación digital es hasta 1000 veces más
+                                                                    precisa que técnicas anteriores, ofreciendo una
+                                                                    especificidad del 99.99% que prácticamente elimina
+                                                                    los falsos positivos. <br><br>
+
+                                                                    La muestra que se requiere para esta técnica de dos
+                                                                    tubos de 10 mL de sangre, los tubos son
+                                                                    proporcionados únicamente por Labopat. Una vez
+                                                                    tomada la muestra se debe mantener en refrigeración
+                                                                    y deben ser enviados a nuestro laboratorio el mismo
+                                                                    día para evitar que la muestra se degrade. Solo se
+                                                                    debe refrigerar, no congelar.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm" id="green-box" style="padding-top: 100px;">
+                                                            <div style="border: 2px solid var(--bluegreen); padding:13px;"
+                                                                class="mb-2">
+                                                                <p id="title-time">Tiempo de respuesta</p>
+                                                                <p>Los resultados son enviados vía correo electrónico al
+                                                                    médico solicitante.</p>
+                                                                <p><b>14 días después de recibida la muestra.</b></p>
+                                                            </div>
+
+                                                            <button class="btn border rounded-pill btn-orange"
+                                                                id="btn-request-test" type="button"
+                                                                style="padding: 7px 15px;font-size: 17px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif; margin-left: 90px;">Solicitar
+                                                                prueba</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn border rounded-pill btn-orange" id="btn-request-test" type="button"
+                                    style="padding: 7px 15px;font-size: 15px;background: var(--bluegreen);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Solicitar
+                                    prueba</button>
+                            </div>
                         </div>
+                        <script>
+                            // alert(window.outerWidth);
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="d-xl-flex justify-content-xl-center align-items-xl-center" id="axiona" style="margin-top: 200px;margin-bottom: 200px;"><img id="axiona_logo" src="assets/img/cancer_tests/axiona_logo.png"></div>
+    <div class="d-xl-flex justify-content-xl-center align-items-xl-center" id="axiona"
+        style="margin-top: 200px;margin-bottom: 200px;"><img id="axiona_logo"
+            src="assets/img/cancer_tests/axiona_logo.png"></div>
     <div class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" id="form-cancer-tests">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" id="col-form-text">
                     <div id="heading-form-text">
-                        <p class="d-xl-flex justify-content-xl-center align-items-xl-center" id="heading-form">Si estás interesado en alguna enfermedad en específico y no lo encuentras aquí,<br>¡Déjanos tus datos y nosotros te haremos llegar toda la información!</p>
+                        <p class="d-xl-flex justify-content-xl-center align-items-xl-center" id="heading-form">Si estás
+                            interesado en alguna enfermedad en específico y no lo encuentras aquí,<br>¡Déjanos tus datos
+                            y nosotros te haremos llegar toda la información!</p>
                     </div>
                 </div>
             </div>
             <div class="row" id="row-inputs">
-                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input type="text" class="input-forms-cancer" placeholder="Nombre" style="color: var(--bluegreen);padding-left: 10px;border-width: 2px;"></div>
-                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input type="email" class="input-forms-cancer" placeholder="Email" style="color: var(--bluegreen);padding-left: 10px;border-width: 2px;"></div>
-                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input type="tel" class="input-forms-cancer" placeholder="Teléfono" style="color: var(--bluegreen);padding-left: 10px;border-width: 2px;"></div>
+                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input
+                        type="text" class="input-forms-cancer" placeholder="Nombre"
+                        style="color: var(--bluegreen);padding-left: 10px;border: 2px solid var(--bluegreen);"></div>
+                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input
+                        type="email" class="input-forms-cancer" placeholder="Email"
+                        style="color: var(--bluegreen);padding-left: 10px;border: 2px solid var(--bluegreen);"></div>
+                <div class="col-md-4 d-xl-flex justify-content-xl-center align-items-xl-center input-fields"><input
+                        type="tel" class="input-forms-cancer" placeholder="Teléfono"
+                        style="color: var(--bluegreen);padding-left: 10px;border: 2px solid var(--bluegreen);"></div>
             </div>
         </div>
     </div>
-    <div class="d-xl-flex justify-content-xl-center align-items-xl-center" id="btn-div" style="background: var(--white);margin-top: 30px;margin-bottom: 30px;"><button class="btn border rounded-pill btn-orange" id="btn-request-test-1" type="button" style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Enviar</button></div><footer>
-    <div id="bar"></div>
-    <div>
-        <p>
-            Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
-            Andrés Cholula, Puebla. <br>
-            Tel: 222 375 4152 / 55 6917 6455
-        </p>
-        <h5>
-            © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
-        </h5>
+    <div class="d-xl-flex justify-content-xl-center align-items-xl-center" id="btn-div"
+        style="background: var(--white);margin-top: 30px;margin-bottom: 30px;"><button
+            class="btn border rounded-pill btn-orange" id="btn-request-test-1" type="button"
+            style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);width: 149px;font-family: 'Source Sans Pro', sans-serif;">Enviar</button>
     </div>
-</footer>
+    <footer>
+        <div id="bar"></div>
+        <div>
+            <p>
+                Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
+                Andrés Cholula, Puebla. <br>
+                Tel: 222 375 4152 / 55 6917 6455
+            </p>
+            <h5>
+                © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
+            </h5>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/circle.js"></script>

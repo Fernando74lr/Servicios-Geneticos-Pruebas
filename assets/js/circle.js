@@ -14,7 +14,7 @@ $(document).ready(function() {
         radius = 410;
         console.log('1');
     } else {
-        radius = 410;
+        radius = 640;
         console.log('2');
     }
     var fields = $('.itemDot');
@@ -85,3 +85,7 @@ $(document).ready(function() {
     }, 3000);
 
 });
+
+// $('#btn-modal').click(function(){
+//     $('.bd-example-modal-xl').modal('show');
+// });

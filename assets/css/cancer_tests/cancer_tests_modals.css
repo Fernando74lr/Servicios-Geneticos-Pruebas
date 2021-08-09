@@ -1,0 +1,244 @@
+
+/* Close button */
+#btn-close-modal-mama,
+#btn-close-modal-colorrec,
+#btn-close-modal-feocro,
+#btn-close-modal-tiro,
+#btn-close-modal-leuc,
+#btn-close-modal {
+    /* width: 50px; */
+    margin: 10px 0 0 21.5em;
+}
+
+#btn-close-modal-mama,
+#btn-close-modal-colorrec,
+#btn-close-modal-feocro,
+#btn-close-modal-tiro,
+#btn-close-modal-leuc,
+#btn-close-modal:focus {
+    outline: none;
+}
+
+/* Mama */
+#list-mama-her {
+    margin-left: -20px;
+}
+
+/* Tiro */
+#list-colorrec-her {
+    margin-left: -20px;
+}
+
+/* Colo */
+#list-tiro-her {
+    margin-left: -10px;
+}
+
+/* Feocro */
+#list-feocro-her {
+    margin-left: -30px;
+}
+
+/* Leucemia */
+#list-leuc-her {
+    margin-left: -30px;
+}
+
+/* Cancer modal laptop devices */
+@media only screen and (min-width: 600px) {
+
+    /* Close button */
+    #btn-close-modal {
+        /* width: 50px; */
+        margin: 10px 0 0 22.5em;
+    }
+
+    #btn-close-modal-mama {
+        /* width: 50px; */
+        margin: 10px 0 0 29em;
+    }
+
+    #btn-close-modal-colorrec {
+        /* width: 50px; */
+        margin: 10px 0 0 29em;
+    }
+
+    #btn-close-modal-feocro {
+        margin: 10px 0 0 29em;
+    }
+
+    #btn-close-modal-tiro {
+        margin: 10px 0 0 29em;
+    }
+
+    #btn-close-modal-leuc {
+        margin: 10px 0 0 29em;
+    }
+
+    #btn-close-modal-biopsia {
+        margin: 10px 0 0 83em;
+    }
+
+    /* Modal cancer content */
+    #modal-cancer {
+        width: 400px;
+        height: 320px;
+        margin-left: 50px;
+    }
+
+    #list-cancer-her {
+        justify-content: center;
+        margin-left: 70px;
+    }
+
+    /* Modal mama content */
+    #modal-mama {
+        width: 500px;
+        height: 320px;
+    }
+
+    #list-mama-her {
+        justify-content: center;
+        margin-left: 60px;
+        width: 400px;
+    }
+
+    /* Modal colorrectal content */
+    #modal-colorrec {
+        width: 500px;
+        height: 320px;
+    }
+
+    #list-colorrec-her {
+        justify-content: center;
+        margin-left: 60px;
+        width: 400px;
+    }
+
+    /* Modal colorrectal content */
+    #modal-feocro {
+        width: 500px;
+        height: 240px;
+        margin-left: 20px;
+    }
+
+    #list-feocro-her {
+        justify-content: center;
+        margin-left: 60px;
+        width: 400px;
+    }
+
+    /* Modal tiro content */
+    #modal-tiro {
+        width: 500px;
+        height: 240px;
+        margin-left: 20px;
+    }
+
+    #list-tiro-her {
+        justify-content: center;
+        margin-left: 60px;
+        width: 400px;
+    }
+
+    /* Modal leucemia content */
+    #list-leuc-her {
+        justify-content: center;
+        margin-left: 40px;
+        width: 400px;
+    }
+
+    /* Modal Biopsia Líquida content */
+    #modal-biopsia {
+        width: 1368px;
+        margin-left: -435px;
+        height: 580px;
+        border-radius: 0px;
+    }
+    
+}
+
+#title-advant {
+    font-size: 19px;
+    line-height: 26px;
+    color: #00827e;
+    font-weight: 700;
+    margin-left: 40px;
+    font-family: "Source Sans Pro";
+}
+
+#title-tech {
+    font-size: 19px;
+    line-height: 26px;
+    color: #00827e;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+}
+
+#title-time {
+    font-size: 30px;
+    line-height: 32px;
+    color: #00827e;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+}
+
+#list-biop {
+    justify-content: center;
+    margin-left: -60px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #btn-close-modal-biopsia {
+        margin: 10px 0 0 21em;
+    }
+
+    #title-advant {
+        font-size: 19px;
+        line-height: 26px;
+        color: #00827e;
+        font-weight: 700;
+        margin-left: 107px;
+        font-family: "Source Sans Pro";
+    }
+    
+    #title-tech {
+        font-size: 19px;
+        line-height: 26px;
+        color: #00827e;
+        font-weight: 700;
+        font-family: "Source Sans Pro";
+    }
+
+    .tech {
+        margin-left: 20px!important;
+    }
+
+    #text-tech {
+        padding: 0%;
+    }
+
+    #green-box {
+        padding-top: 40px!important;
+    }
+
+    #title-time {
+        font-size: 30px;
+        line-height: 32px;
+        color: #00827e;
+        font-weight: 700;
+        font-family: "Source Sans Pro";
+    }
+    
+    #list-biop {
+        justify-content: center;
+        margin-left: -60px;
+        width: 400px;
+    }
+
+    #modal-biopsia {
+        height: 1650px;
+    }
+}

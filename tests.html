@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="./assets/img/logo-and-ico/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>servicios-geneticos-bs</title>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -21,64 +24,126 @@
     <link rel="stylesheet" href="assets/css/Video-Parallax-Background-v2.css">
 </head>
 
-<body>
+<body class="animate__animated  animate__fadeIn">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
-        <div class="container"><img src="assets/img/logo-and-ico/logo-navbar.png"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Source Sans Pro', sans-serif;font-size: 23px;">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about_us.html" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tests.html" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Pruebas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="risks_tests.html" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cancer_tests.html" style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Contacto</a></li>
-                    <li class="nav-item" style="text-align: center;"><button class="btn btn-primary border rounded-pill" type="button" style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: var(--bluegreen);background-color: transparent!important;width: 120px;font-size: 23px;height: 35px;padding: 0 0;margin-top: 6px;margin-left: 5px;">LABOPAT</button></li>
-                </ul>
-            </div>
+        <div class="container"><img src="assets/img/logo-and-ico/logo-navbar.png"><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1"
+                    style="font-family: 'Source Sans Pro', sans-serif;font-size: 23px;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"
+                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about_us.html"
+                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">Sobre
+                                nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: #00827E;text-align: center;">
+                                Pruebas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="risks_tests.html"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                        de riesgo</a></li>
+                                <li><a class="dropdown-item" href="tests.html"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                        de diagnóstico</a></li>
+                                <li><a class="dropdown-item" href="cancer_tests.html"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Prueba
+                                        de cáncer</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        style="font-family: 'Source Sans Pro', sans-serif;font-weight: 500;color: #00827E;text-align: center;">Salud
+                                        reproductiva</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"
+                                style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">FAQ</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"
+                                style="color: #00827E;font-family: 'Source Sans Pro', sans-serif;font-weight: 300;text-align: center;">Contacto</a>
+                        </li>
+                        <li class="nav-item" style="text-align: center;"><button class="btn btn-primary border rounded-pill"
+                                type="button"
+                                style="font-family: 'Source Sans Pro', sans-serif;font-weight: 300;color: var(--bluegreen);background-color: transparent!important;width: 120px;font-size: 23px;height: 35px;padding: 0 0;margin-top: 6px;margin-left: 5px;">LABOPAT</button>
+                        </li>
+                    </ul>
+    
+                </div>
         </div>
     </nav>
-    <div class="bg-light border rounded border-light hero-technology jumbotron py-5 px-4" id="tests_banner" style="height: 604px;">
-        <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center" id="conoce-pruebas" style="font-family: 'Source Sans Pro', sans-serif;">
-            <p class="hero-title" style="font-size: 54px;font-family: 'Source Sans Pro', sans-serif;text-align: center;line-height: 55px;">CONOCE NUESTRAS PRUEBAS</p>
+    <div class="bg-light border rounded border-light hero-technology jumbotron py-5 px-4" id="tests_banner"
+        style="height: 604px;">
+        <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center"
+            id="conoce-pruebas" style="font-family: 'Source Sans Pro', sans-serif;">
+            <p class="hero-title"
+                style="font-size: 54px;font-family: 'Source Sans Pro', sans-serif;text-align: center;line-height: 55px;">
+                CONOCE NUESTRAS PRUEBAS</p>
             <div id="barra"></div>
-            <div id="arrow-test"></div>
+            <div id="arrow-test" class="animate__animated animate__infinite animate__fadeInDown infinite"
+                style="--animate-duration: 1.5s;">
+            </div>
         </div>
     </div>
     <div id="tests-table" style="margin-top: 100px;margin-bottom: 100px;">
         <div class="container">
             <div class="row" id="row-1" style="margin-bottom: 50px;">
-                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="icons-tests" src="assets/img/tests/risk_tests/cancer.png" style="width: 90px;"></div>
+                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"
+                    style="height: 150px;" id="risk_tests_img">
+                    <img class="icons-tests animate__animated animate__infinite animate__fadeIn infinite" src="assets/img/tests/risk_tests/panel_integral.png"
+                        style="--animate-duration: 3s;">
+                </div>
                 <div class="col-md-6 col-xl-9">
                     <div>
                         <div class="row">
                             <div class="col">
                                 <div>
                                     <h1 id="risk-test-heading">Pruebas de riesgo</h1>
-                                    <p id="risk-test-p">Pruebas genéticas que podrían ayudar a conocer si una persona tiene un riesgo mayor, comparado con el de la población general, de desarrollar enfermedades hereditarias.</p>
+                                    <p id="risk-test-p">Pruebas genéticas que podrían ayudar a conocer si una persona
+                                        tiene un riesgo mayor, comparado con el de la población general, de desarrollar
+                                        enfermedades hereditarias.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-8">
                                 <ul class="list-unstyled fa-ul">
-                                    <li><i class="far fa-check-circle fa-li text-primary"></i>Panel Cáncer Hereditario</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Salud Cardiovascular</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Complementarios</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"></i>Panel Cáncer Hereditario
+                                    </li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Salud Cardiovascular</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Complementarios</li>
                                 </ul>
                             </div>
-                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests" style="text-align: center;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más información</button></div>
+                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests"
+                                style="text-align: center;"><button class="btn border rounded-pill btn-orange"
+                                    type="button"
+                                    style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más
+                                    información</button></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row" id="row-2" style="margin-bottom: 40px;">
-                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="icons-tests" src="assets/img/home/services/cardiologia.png" style="width: 90px;"></div>
+                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"
+                    style="height: 150px;" id="diagnostics_test_img">
+                    <img class="icons-tests animate__animated animate__infinite animate__fadeIn infinite"
+                        src="assets/img/home/services/endocrinologia.png" style="--animate-duration: 3s;">
+                </div>
                 <div class="col-md-6 col-xl-9">
                     <div>
                         <div class="row">
                             <div class="col">
                                 <div>
                                     <h1 id="risk-test-heading-1">Pruebas de diagnóstico</h1>
-                                    <p id="risk-test-p-1">Pruebas genéticas que podrían ayudar a determinar si una enfermedad es causada por factores genéticos, confirmar un diagnóstico y/o identificar si una variantte genética, asociada a algún tipo de enfermedad, está presente en la familia.</p>
+                                    <p id="risk-test-p-1">Pruebas genéticas que podrían ayudar a determinar si una
+                                        enfermedad es causada por factores genéticos, confirmar un diagnóstico y/o
+                                        identificar si una variantte genética, asociada a algún tipo de enfermedad, está
+                                        presente en la familia.</p>
                                 </div>
                             </div>
                         </div>
@@ -86,31 +151,51 @@
                             <div class="col-xl-8">
                                 <ul class="list-unstyled fa-ul">
                                     <li>Ca<i class="far fa-check-circle fa-li text-primary"></i>rdiología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Dermatología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Genética pediátrica</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Inmunología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Neurología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Oftalmología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Tamizaje en recién nacidos</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Trastornos metabólicos</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Hematología</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--bluegreen);"></i>Exoma</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Dermatología</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Genética pediátrica</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Inmunología</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Neurología</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Oftalmología</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Tamizaje en recién nacidos</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Trastornos metabólicos</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Hematología</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--bluegreen);"></i>Exoma</li>
                                 </ul>
                             </div>
-                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests" style="text-align: center;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más información<br></button></div>
+                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests"
+                                style="text-align: center;"><button class="btn border rounded-pill btn-orange"
+                                    type="button"
+                                    style="padding: 7px 15px;font-size: 20px;background: var(--orange);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más
+                                    información<br></button></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row" id="row-3" style="margin-bottom: 50px;">
-                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="icons-tests" src="assets/img/home/services/cancer.png" style="width: 75px;"></div>
+                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"><img
+                        class="icons-tests" src="assets/img/home/services/cancer.png"></div>
                 <div class="col-md-6 col-xl-9" style="background: var(--bluegreen);margin-top: 20px;">
                     <div style="background: var(--bluegreen);color: var(--white);">
                         <div class="row">
                             <div class="col" style="padding: 20px;">
                                 <div>
-                                    <h1 id="risk-test-heading-2" style="color: var(--white);font-size: 27px;"><i class="far fa-check-circle" style="font-size: 23px;"></i>&nbsp;Cáncer Hereditario</h1>
-                                    <p id="risk-test-p-2" style="color: var(--white);font-size: 22px;font-family: 'Source Sans Pro', sans-serif;">Pruebas genéticas para<strong> identificar alteraciones en genes específicos que estén asociadas a un riesgo mayor de presentar cáncer.</strong> Conoce los paneles con los que contamos:</p>
+                                    <h1 id="risk-test-heading-2" style="color: var(--white);font-size: 27px;"><i
+                                            class="far fa-check-circle" style="font-size: 23px;"></i>&nbsp;Cáncer
+                                        Hereditario</h1>
+                                    <p id="risk-test-p-2"
+                                        style="color: var(--white);font-size: 22px;font-family: 'Source Sans Pro', sans-serif;">
+                                        Pruebas genéticas para<strong> identificar alteraciones en genes específicos que
+                                            estén asociadas a un riesgo mayor de presentar cáncer.</strong> Conoce los
+                                        paneles con los que contamos:</p>
                                 </div>
                             </div>
                         </div>
@@ -119,41 +204,74 @@
                                 <ul class="list-unstyled fa-ul" id="list-cancer-her">
                                     <li style="color: var(--white);">- Panel cáncer hereditario.</li>
                                     <li style="color: var(--white);">- Panel para cáncer de mama y ginecológico.</li>
-                                    <li style="color: var(--white);">- Panel para síndrome de cáncer de mama y ovario hereditario.</li>
+                                    <li style="color: var(--white);">- Panel para síndrome de cáncer de mama y ovario
+                                        hereditario.</li>
                                     <li style="color: var(--white);">- Panel para cáncer colorrectal.</li>
                                     <li style="color: var(--white);">- Panel para cáncer gástrico.</li>
-                                    <li style="color: var(--white);">- Panel feocromocitoma y paraganglioma hereditario.</li>
+                                    <li style="color: var(--white);">- Panel feocromocitoma y paraganglioma hereditario.
+                                    </li>
                                     <li style="color: var(--white);">- Panel para cáncer de tiroides</li>
-                                    <li style="color: var(--white);">- Panel para leucemia / síndrome mielodisplásico.</li>
+                                    <li style="color: var(--white);">- Panel para leucemia / síndrome mielodisplásico.
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-btns-tests" style="text-align: center;background: var(--white);padding-top: 20px;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 20px;background: rgba(0,130,126,0.25);color: var(--black);font-family: 'Source Sans Pro', sans-serif;">Más información<br></button></div>
                         </div>
                     </div>
                 </div>
+                <style>
+                    @media only screen and (min-width: 600px) {
+                        #btn-biop-liq {
+                            margin-left: 325px;
+                        }
+                    }
+
+                </style>
+                <div id="btn-biop-liq"
+                    class="col d-xl-flex justify-content-xl-start align-items-xl-start col-btns-tests"
+                    style="text-align: center;background: var(--white);padding-top: 20px;"><button
+                        class="btn border rounded-pill btn-orange" type="button"
+                        style="padding: 7px 15px;font-size: 20px;background: rgba(0,130,126,0.25);color: var(--black);font-family: 'Source Sans Pro', sans-serif;">Más
+                        información<br></button></div>
             </div>
             <div class="row" id="row-4">
-                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="icons-tests" src="assets/img/tests/reproductive_health/portadores.png" style="width: 150px;"></div>
+                <div class="col-md-6 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center"
+                    style="height: 150px;" id="reproductive_health_img">
+                    <img class="icons-tests animate__animated animate__infinite animate__fadeIn infinite"
+                        src="assets/img/tests/reproductive_health/preimplantacion.png" style="--animate-duration: 3s;">
+                </div>
                 <div class="col-md-6 col-xl-9">
                     <div>
                         <div class="row">
                             <div class="col">
                                 <div>
                                     <h1 id="risk-test-heading-3">Salud reproductiva</h1>
-                                    <p id="risk-test-p-3">Pruebas genéticas que podrían brindar información útil para guiar decisiones clínicas importantes antes, durante y después del embarazo.<br><br>Conoce las diferentes pruebas con las que contamos:<br></p>
+                                    <p id="risk-test-p-3">Pruebas genéticas que podrían brindar información útil para
+                                        guiar decisiones clínicas importantes antes, durante y después del
+                                        embarazo.<br><br>Conoce las diferentes pruebas con las que contamos:<br></p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-8">
                                 <ul class="list-unstyled fa-ul" id="list-health">
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--main-color)!important;"></i>Paneles para la detección de portadores de alteraciones genéticas.</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--main-color)!important;"></i>Diagnóstico prenatal.</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--main-color)!important;"></i>Prueba de preimplantación.</li>
-                                    <li><i class="far fa-check-circle fa-li text-primary" style="color: var(--main-color)!important;"></i>Prueba para la pérdida de embarazo.</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--main-color)!important;"></i>Paneles para la detección de
+                                        portadores de alteraciones genéticas.</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--main-color)!important;"></i>Diagnóstico prenatal.</li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--main-color)!important;"></i>Prueba de preimplantación.
+                                    </li>
+                                    <li><i class="far fa-check-circle fa-li text-primary"
+                                            style="color: var(--main-color)!important;"></i>Prueba para la pérdida de
+                                        embarazo.</li>
                                 </ul>
                             </div>
-                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests" style="text-align: center;"><button class="btn border rounded-pill btn-orange" type="button" style="padding: 7px 15px;font-size: 20px;background: var(--main-color);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más información<br></button></div>
+                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-start col-btns-tests"
+                                style="text-align: center;"><button class="btn border rounded-pill btn-orange"
+                                    type="button"
+                                    style="padding: 7px 15px;font-size: 20px;background: var(--main-color);color: var(--white);font-family: 'Source Sans Pro', sans-serif;">Más
+                                    información<br></button></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +286,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img src="assets/img/tests/steps/step_1.png">
+                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img
+                        src="assets/img/tests/steps/step_1.png">
                     <div class="row" style="margin-top: 28px;">
                         <div class="col" style="margin-top: 11px;">
                             <p class="step-heading">SOLICITUD DE PRUEBA</p>
@@ -176,23 +295,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xl-3 text-center" style="margin-top: 10px;"><img src="assets/img/tests/steps/step_2.png">
+                <div class="col-md-3 col-xl-3 text-center" style="margin-top: 10px;"><img
+                        src="assets/img/tests/steps/step_2.png">
                     <div class="row" style="margin-top: 13px;">
                         <div class="col" style="margin-top: 11px;">
                             <p class="step-heading">AGENDA TU CITA</p>
                         </div>
                     </div>
-                    <p class="step-parag">Agenda tu cita para realizar la toma de muestra, es en saliva ¡Fácil y sin agujas!</p>
+                    <p class="step-parag">Agenda tu cita para realizar la toma de muestra, es en saliva ¡Fácil y sin
+                        agujas!</p>
                 </div>
-                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img src="assets/img/tests/steps/step_3.png">
+                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img
+                        src="assets/img/tests/steps/step_3.png">
                     <div class="row">
                         <div class="col" style="margin-top: 11px;">
-                            <p class="text-break step-heading" style="margin-bottom: 10px;">ESTUDIO GENÉTICO Y ANÁLISIS&nbsp;BIOINFORMÁTICO.</p>
+                            <p class="text-break step-heading" style="margin-bottom: 10px;">ESTUDIO GENÉTICO Y
+                                ANÁLISIS&nbsp;BIOINFORMÁTICO</p>
                         </div>
                     </div>
                     <p class="step-parag">El análisis de la muestra es de 3 a 4 semanas.</p>
                 </div>
-                <div class="col-md-3 text-center" style="margin-top: 10px;"><img src="assets/img/tests/steps/step_4.png">
+                <div class="col-md-3 text-center" style="margin-top: 10px;"><img
+                        src="assets/img/tests/steps/step_4.png">
                     <div class="row" style="margin-top: 12px;">
                         <div class="col" style="margin-top: 11px;">
                             <p class="step-heading">ENTREGA DE RESULTADOS</p>
@@ -200,7 +324,8 @@
                     </div>
                     <p class="step-parag">Los resultados son entregados a tu médico solicitante.</p>
                 </div>
-                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img src="assets/img/tests/steps/step_5.png">
+                <div class="col-md-3 col-xl-2 text-center" style="margin-top: 10px;"><img
+                        src="assets/img/tests/steps/step_5.png">
                     <div class="row" style="margin-top: 14px;">
                         <div class="col" style="margin-top: 11px;">
                             <p class="step-heading">INTERPRETACIÓN<br>DE RESULTADOS</p>
@@ -211,31 +336,36 @@
             </div>
             <div class="row">
                 <div class="col text-center justify-content-xl-center align-items-xl-center">
-                    <p id="steps-warning" style="margin-top: 10px;">En caso de que lo requieras, <strong>Labopat </strong>cuenta con una red de especialistas con los cuales puede contactarte.</p>
+                    <p id="steps-warning" style="margin-top: 10px;">En caso de que lo requieras, <strong>Labopat
+                        </strong>cuenta con una red de especialistas con los cuales puede contactarte.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col text-center justify-content-xl-center align-items-xl-center"><a id="steps-warning-2" href="#" style="font-family: 'Source Sans Pro', sans-serif;"><br><strong>Solicita una prueba</strong><br><br></a></div>
+                <div class="col text-center justify-content-xl-center align-items-xl-center"><a id="steps-warning-2"
+                        href="#" style="font-family: 'Source Sans Pro', sans-serif;"><br><strong>Solicita una
+                            prueba</strong><br><br></a></div>
             </div>
         </div>
-    </div><footer>
-    <div id="bar"></div>
-    <div>
-        <p>
-            Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
-            Andrés Cholula, Puebla. <br>
-            Tel: 222 375 4152 / 55 6917 6455
-        </p>
-        <h5>
-            © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
-        </h5>
     </div>
-</footer>
+    <footer>
+        <div id="bar"></div>
+        <div>
+            <p>
+                Plaza Palmas - local 20 / Av. Zeta de Cochero #403-20 Reserva Territorial Atlixcayotl C.P. 72820 San
+                Andrés Cholula, Puebla. <br>
+                Tel: 222 375 4152 / 55 6917 6455
+            </p>
+            <h5>
+                © 2020, Labopat Servicios Genéticos. Todos los derechos reservados.
+            </h5>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/circle.js"></script>
     <script src="assets/js/Paralax-Hero-Banner.js"></script>
     <script src="assets/js/Video-Parallax-Background-v2.js"></script>
+    <script src="assets/js/changing_imgs.js"></script>
 </body>
 
 </html>

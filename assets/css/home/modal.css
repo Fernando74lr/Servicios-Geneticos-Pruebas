@@ -1,175 +1,332 @@
-/* Modal */
 
-#modal-1 {
-  width: 1368px;
-  margin-left: -107px;
-  height: 580px;
-  border-radius: 0%;
-  border: none;
-  background-image: url('../../../assets/img/home/modal/genes.png');
-  background-repeat: no-repeat;
-  background-position-y: 20px;
+/* Index modal laptop devices */
+@media only screen and (min-width: 600px) {
+    #modal-steps {
+        width: 1368px;
+        margin-left: -435px;
+        height: 580px;
+        border-radius: 0%;
+        border: none;
+        background-image: url('../../../assets/img/home/modal/genes.png');
+        background-repeat: no-repeat;
+        background-position-y: 20px;
+    }
+
+    .banner-prop {
+        padding-top: 150px;
+    }
+
+    /* Close button */
+
+    #btn-close-modal-steps {
+        width: 50px;
+        margin: 10px 0 0 82em;
+        position: absolute;
+    }
+
+    #btn-close-modal-steps:focus {
+        outline: none;
+    }
+
+    /* Banners */
+
+    #caption-modal-1, #caption-modal-2, #caption-modal-3, #caption-modal-4 {
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    #caption-modal-1 h4, #caption-modal-2 h4, #caption-modal-3 h4, #caption-modal-4 h4 {
+        width: 295px;
+        height: 19px;
+        font-size: 24px;
+        line-height: 25px;
+        color: var(--bluegreen);
+        font-weight: 300;
+        font-family: "Source Sans Pro";
+        position: absolute;
+        top: 100px;
+        left: 400px;
+    }
+
+    #caption-modal-1 span, #caption-modal-2 span, #caption-modal-3 span, #caption-modal-4 span {
+        margin-right: 40px;
+    }
+
+    #caption-modal-1 p, #caption-modal-2 p, #caption-modal-3 p, #caption-modal-4 p {
+        color: var(--black);
+        text-align: left;
+        position: absolute;
+        top: 140px;
+        left: 513px;
+        font-size: 21px;
+        width: 370px;
+    }
+
+    .line {
+        width: 235px;
+        height: 1px;
+        background-color: #00827f;
+        border: 0px solid #2b6464;
+        position: absolute;
+        top: 130px;
+        left: 430px;
+    }
+
+    .elipse {
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background-image: url('../../../assets/img/home/modal/elipse-bg.png');
+        background-repeat: no-repeat;
+        padding-left: 23px;
+    }
+
+    #img-modal-1, #img-modal-2, #img-modal-3, #img-modal-4 {
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+        -moz-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+        box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+    }
+
+    #img-modal-1 {
+        background-image: url('../../../assets/img/home/modal/steps/step-1.png');
+        background-position-x: -140px;
+        background-position-y: -25px;
+    }
+
+    #img-modal-2 {
+        background-image: url('../../../assets/img/home/modal/steps/step-2.png');
+        background-size: 100%;
+        background-position-y: -120px;
+    }
+
+    #img-modal-3 {
+        background-image: url('../../../assets/img/home/modal/steps/step-3.png');
+        background-size: 100%;
+        background-position-y: -25px;
+    }
+
+    #img-modal-4 {
+        background-image: url('../../../assets/img/home/modal/steps/step-4.png');
+        background-size: 100%;
+    }
+
+    /* Static title */
+
+    #static-modal-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        width: 500px;
+        margin-left: 425px;
+        text-align: center;
+    }
+
+    #static-modal-title h1 {
+        color: var(--orange);
+        font-size: 55px;
+    }
+
+    #static-modal-title p {
+        font-size: 23px;
+        margin-top: -10px;
+        width: 600px;
+    }
+
+    /* Arreglos */
+
+    #caption-modal-3 h4 {
+        top: 50px;
+        width: 380px;
+    }
+
+    #caption-modal-2 p {
+        left: 503px;
+    }
+
+    #caption-modal-3 p {
+        top: 90px;
+        left: 503px;
+    }
+
+    #caption-modal-2 .line {
+        width: 260px;
+        left: 418px;
+    }
+
+    #caption-modal-3 .line {
+        top: 80px;
+        width: 340px;
+        left: 422px;
+    }
+
+    #caption-modal-4 .line {
+        top: 130px;
+        width: 295px;
+        left: 402px;
+    }
+
+    #caption-modal-4 p {
+        left: 483px;
+    }
 }
 
-.banner-prop {
-  padding-top: 150px;
+/* Index modal small devices */
+@media only screen and (max-width: 600px) {
+    /* Close button */
+    #btn-close-modal-steps {
+        width: 50px;
+        margin: -5px 0 0 20.5em;
+        position: absolute;
+    }
+
+    #btn-close-modal-steps:focus {
+        outline: none;
+    }
+
+    /* Static title */
+    #static-modal-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        width: 500px;
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 100%;
+    }
+
+    #static-modal-title h1 {
+        color: var(--orange);
+        font-size: 40px;
+    }
+
+    #static-modal-title p {
+        font-size: 19px;
+        margin-top: -10px;
+        width: 600px;
+        width: 170px;
+    }
+
+    #modal-steps {
+        padding-top: 15px;
+        height: 730px;
+        border-radius: 0%;
+        border: none;
+        background-image: url('../../../assets/img/home/modal/genes.png');
+        background-repeat: no-repeat;
+        background-position-y: 20px;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+        /* border: 1px solid black; */
+        height: 600px;
+        padding: 50px;
+    }
+
+    #caption-modal-1, #caption-modal-2, #caption-modal-3, #caption-modal-4 {
+        /* border: 1px solid green; */
+        margin-top: 200px;
+        margin-left: 60px;
+        width: 100%;
+        margin-left: -40px;
+        height: 50px;
+        color: black;
+        position: absolute;
+    }
+
+    .carousel-item {
+        /* padding-top: 100px; */
+        justify-content: center;
+    }
+
+    #img-modal-1, #img-modal-2, #img-modal-3, #img-modal-4 {
+        position: absolute;
+        top: 200px;
+        width: 200px;
+        height: 200px;
+        z-index: 10600;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+        -moz-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+        box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
+    }
+
+    #caption-modal-1 h4, #caption-modal-2 h4, #caption-modal-3 h4, #caption-modal-4 h4 {
+        color: var(--bluegreen);
+        font-weight: 300;
+        font-family: "Source Sans Pro";
+        font-size: 24px;
+    }
+
+    #caption-modal-1 p, #caption-modal-2 p, #caption-modal-4 p {
+        color: var(--black);
+        font-size: 19px;
+    }
+
+    #caption-modal-3 p {
+        color: var(--black);
+        font-size: 18px;
+    }
+
+    #img-modal-1 {
+        background-image: url('../../../assets/img/home/modal/steps/step-1.png');
+        background-position-x: -192px;
+        background-position-y: -33px;
+        position: absolute;
+        top: 280px;
+        left: 50px;
+    }
+
+    #img-modal-2 {
+        background-image: url('../../../assets/img/home/modal/steps/step-2.png');
+        background-size: 100%;
+        background-position-y: -63px;
+        position: absolute;
+        top: 250px;
+        left: 50px;
+    }
+
+    #img-modal-3 {
+        background-image: url('../../../assets/img/home/modal/steps/step-3.png');
+        background-size: 100%;
+        background-position-y: -25px;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 400px;
+        left: 65px;
+    }
+
+    #img-modal-4 {
+        background-image: url('../../../assets/img/home/modal/steps/step-4.png');
+        background-size: 100%;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+
+    
+    .carousel-inner-modal {
+        height: 550px;
+        margin-top: -40px;
+        /* border: 1px solid red; */
+    }
 }
 
-/* Close button */
-
-#btn-close-modal {
-  width: 50px;
-  margin: 5px 0 0 55em;
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
 
-#btn-close-modal:focus {
-  outline: none;
+.carousel-indicators {
+    filter: invert(50%);
 }
-
-/* Banners */
-
-#caption-modal-1, #caption-modal-2, #caption-modal-3, #caption-modal-4 {
-  margin-bottom: 50px;
-  display: flex;
-}
-
-#caption-modal-1 h4, #caption-modal-2 h4, #caption-modal-3 h4, #caption-modal-4 h4 {
-  width: 289px;
-  height: 19px;
-  font-size: 24px;
-  line-height: 25px;
-  color: var(--bluegreen);
-  font-weight: 300;
-  font-family: "Source Sans Pro";
-  position: absolute;
-  top: 100px;
-  left: 400px;
-}
-
-#caption-modal-1 span, #caption-modal-2 span, #caption-modal-3 span, #caption-modal-4 span {
-  margin-right: 40px;
-}
-
-#caption-modal-1 p, #caption-modal-2 p, #caption-modal-3 p, #caption-modal-4 p {
-  color: var(--black);
-  text-align: left;
-  position: absolute;
-  top: 140px;
-  left: 513px;
-  font-size: 21px;
-  width: 370px;
-}
-
-.line {
-  width: 227px;
-  height: 1px;
-  background-color: #00827f;
-  border: 0px solid #2b6464;
-  position: absolute;
-  top: 130px;
-  left: 430px;
-}
-
-.elipse {
-  width: 350px;
-  height: 350px;
-  border-radius: 100%;
-  background-image: url('../../../assets/img/home/modal/elipse-bg.png');
-  background-repeat: no-repeat;
-  padding-left: 23px;
-}
-
-#img-modal-1, #img-modal-2, #img-modal-3, #img-modal-4 {
-  width: 350px;
-  height: 350px;
-  border-radius: 100%;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
-  -moz-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
-  box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.22);
-}
-
-#img-modal-1 {
-  background-image: url('../../../assets/img/home/modal/steps/step-1.png');
-  background-position-x: -140px;
-  background-position-y: -25px;
-}
-
-#img-modal-2 {
-  background-image: url('../../../assets/img/home/modal/steps/step-2.png');
-  background-size: 100%;
-  background-position-y: -120px;
-}
-
-#img-modal-3 {
-  background-image: url('../../../assets/img/home/modal/steps/step-3.png');
-  background-size: 100%;
-  background-position-y: -25px;
-}
-
-#img-modal-4 {
-  background-image: url('../../../assets/img/home/modal/steps/step-4.png');
-  background-size: 100%;
-}
-
-/* Static title */
-
-#static-modal-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 200px;
-  width: 500px;
-  margin-left: 425px;
-  text-align: center;
-}
-
-#static-modal-title h1 {
-  color: var(--orange);
-  font-size: 55px;
-}
-
-#static-modal-title p {
-  font-size: 23px;
-  margin-top: -10px;
-  width: 600px;
-}
-
-/* Arreglos */
-
-#caption-modal-3 h4 {
-  top: 50px;
-  width: 380px;
-}
-
-#caption-modal-2 p {
-  left: 503px;
-}
-
-#caption-modal-3 p {
-  top: 90px;
-  left: 503px;
-}
-
-#caption-modal-2 .line {
-  width: 252px;
-  left: 418px;
-}
-
-#caption-modal-3 .line {
-  top: 80px;
-  width: 336px;
-  left: 422px;
-}
-
-#caption-modal-4 .line {
-  top: 130px;
-  width: 287px;
-  left: 402px;
-}
-
-#caption-modal-4 p {
-  left: 483px;
-}
-
